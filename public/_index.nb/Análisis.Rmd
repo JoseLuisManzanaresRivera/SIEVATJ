@@ -1,0 +1,48 @@
+---
+title: "Análisis"
+output: html_notebook
+---
+
+
+
+```{r set-global-options, echo=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(eval = TRUE, 
+                      echo = FALSE, 
+                      cache = FALSE,
+                      warning =FALSE,
+                      message = FALSE,
+                      include = TRUE,
+                      collapse = FALSE,
+                      dependson = NULL,
+                      engine = "R", # Chunks will always have R code, unless noted
+                      error = FALSE)                     
+
+```
+
+
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(scales)
+library(plotly)
+
+```
+
+
+
+
+
+```{r}
+
+cee<-read.csv('cee.csv')
+
+cee19<-mutate(cee,Nivel=as.character(Nivel),Nivel=substr(cee$Nivel,7,7),Nivel=as.factor(Nivel))%>%
+  rename(Ponderación=Ponderación.50., cee=Comité.Externo.de.Evaluación)%>%
+  arrange(desc(Total))
+
+
+
+  
+```
+

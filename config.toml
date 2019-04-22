@@ -1,0 +1,45 @@
+baseURL = "https://compromiso-institucional.netlify.com"
+languageCode = "en-us"
+title = "colef"
+theme = "vanilla-bootstrap-hugo-theme"
+googleAnalytics = "UA-123456789-1"
+
+# Uncomment below to enable syntax highlighting
+# pygmentsCodefences = true
+# pygmentsCodefencesGuessSyntax = true
+# See https://xyproto.github.io/splash/docs/all.html for more styles
+# pygmentsStyle = "pygments"
+
+[taxonomies]
+  tag = "tags"
+
+[permalinks]
+  post = "/:filename/"
+
+# See https://feathericons.com/
+# The value of pre is the icon name
+[menu]
+  [[menu.nav]]
+    name = "Introducción"
+    pre = "Introducción"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Análisis"
+    pre = "smile"
+    url = "/Análisis/"
+    weight = 2
+  [[menu.nav]]
+    name = "Propuestas"
+    pre = "edit"
+    url = "/Propuestas/"
+    weight = 3
+    
+[params]
+  includeBootstrapJs = false
+  showActiveNav = true
+  containerMaxWidth = "700px"
+  dateFormat = "Jan 2, 2006"
+  homeText = "Welcome to the Vanilla theme demo. Have a look around. Maybe even eat some ice cream."
+  footerText = "José Luis Manzanares Rivera"
+  hideFooter = false

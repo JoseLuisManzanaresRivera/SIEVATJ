@@ -1,0 +1,245 @@
+---
+title: " "
+output: html_notebook
+---
+
+
+
+```{r set-global-options, echo=FALSE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(eval = TRUE, 
+                      echo = FALSE, 
+                      cache = FALSE,
+                      warning =FALSE,
+                      message = FALSE,
+                      include = TRUE,
+                      collapse = FALSE,
+                      dependson = NULL,
+                      engine = "R", # Chunks will always have R code, unless noted
+                      error = FALSE)                     
+
+```
+
+
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(scales)
+library(plotly)
+
+```
+
+
+
+
+
+```{r}
+
+cee<-read.csv('cee.csv')
+
+cee19<-mutate(cee,Nivel=as.character(Nivel),Nivel=substr(cee$Nivel,7,7),Nivel=as.factor(Nivel))%>%
+  rename(Ponderación=Ponderación.50., cee=Comité.Externo.de.Evaluación)%>%
+  arrange(desc(Total))
+
+```
+
+
+```{r}
+
+m18<-readRDS('m18.rds')%>%
+mutate(depa=ifelse(depa==1,"DEAP",ifelse(depa==2,"DEC",ifelse(depa==3,"DEE",ifelse(depa==4,"DEP",ifelse(depa==5,"DES","DEUMA"))))))%>%
+  rename(Departamento=depa)%>%
+  mutate(Sexo=as.factor(Sexo))%>%
+  mutate(Sexo=ifelse(Sexo==0,"Hombre","Mujer"))
+```
+
+
+### Análisis de la producción 
+
+##### 1.	Producción en las Sedes.^[
+*Nota:* dado que las sedes con más investigadores generan un volumen global mayor de producción, un indicador de desempeño que controla por el tamaño de cada sede es la producción per cápita por sede. Este indicador se calcula con la Suma del puntaje por sede entre el número de investigadores de la sede en cuestión. Este indicador permite contrastar el desempeño real en cada sede.]
+
+```{r}
+pts<-group_by(m18,Sede)%>%
+  summarize(Inv_sede=n(),Pts_sede=sum(pts_prod))%>%
+  mutate(Inv_Colef=sum(Inv_sede),PtsPerInv=round(Pts_sede/Inv_sede,2))%>%
+  arrange(desc(PtsPerInv))%>%
+  mutate(Sede=fct_reorder(Sede,PtsPerInv), NGL=20.20/PtsPerInv, acu=cumsum(PtsPerInv))
+
+ptl.1<-ggplot(pts,aes(Sede,PtsPerInv, fill=Sede))+
+  geom_col()+
+  coord_flip()+
+  scale_fill_brewer(palette="Oranges")+
+  labs(y="Puntos por investigador", x="Sede",title="Puntuación por sede Según número de investgadores", subtitle="Evaluación SIEVA 2018", caption="Fuente: Elaboración propia con base en matriz de evaluación SIEVA 2018.")+
+  theme(plot.caption = element_text(size = 10, hjust = 0))+
+  theme_light()+
+  guides(fill=FALSE)
+  
+ggplotly(ptl.1)
+```
+
+La producción por investigador de la sede Nogales duplica el indicador de la sede Matamoros.
+
+Triplica el indicador de producción de las sedes Tijuana, (2.9 veces), Piedras Negras (3 veces) y Juárez (3.3 veces) respectivamente.
+
+Es 3.7 veces la generada en la sede Monterrey. Y representa 11 veces la generada en la sede Mexicali.
+
+Es posible apreciar que la producción que se generó en la sede Nogales por investigador en el periodo de referencia equivale al puntaje generado por investigador de las sedes: Piedras Negras, Juárez, Monterrey y Mexicali sumadas. 
+
+
+##### 2. Calidad vs. Cantidad de producción
+
+
+Un argumento a menudo enfatizado es la importancia de generar producción de calidad en contraste con un gran volumen de productos.
+
+Para abordar, este punto se analiza a continuación la participación de los investigadores en la generación de publicaciones tipo A, la calificación de calidad más alta establecida en la regulación vigente  y se hace el contraste por departamento.
+
+```{r}
+Adep<-group_by(m18,Departamento)%>%
+  summarize(total=sum(Artículos_A))%>%
+  arrange(desc(total))%>%
+  filter(total!=0)
+
+pltA<-ggplot(Adep, aes(fct_reorder(Departamento,total), total, fill=Departamento))+
+  geom_col()+ 
+  coord_flip()+
+  labs(y="Artículos", subtitle="Por departamento académico", x="Nombre del investigador",title="Artículos tipo A publicados 2018")+
+  theme_light()
+
+ggplotly(pltA)
+
+```
+
+¿Cómo se distribuye la producción de este tipo de artículos  de calidad  al interior de los departamentos? 
+
+```{r}
+
+A<-group_by(m18,Departamento, Nombre)%>%
+  summarize(total=sum(Artículos_A))%>%
+  arrange(desc(total))%>%
+  filter(total!=0)
+  
+a<-A%>%ungroup()%>%
+  group_by(Departamento)%>%
+  mutate(pr=round(total/sum(total),3)*100)
+  
+
+plt2<-ggplot(a,aes(fct_reorder(Nombre,total),total, fill=Departamento))+
+geom_col()+ 
+scale_fill_brewer(palette="Set2")+ 
+  coord_flip()+
+  labs(y="Artículos", subtitle="Evalaución 2018", x="Nombre del investigador",title="Publicaciones tipo A por investigador")+
+  theme_light()
+
+ggplotly(plt2)
+
+```
+
+Los investigadores que produjeron artículos de calidad tipo A representan el 37% (35 investigadores de 95 evaluados). El restante 63% no generó artículos tipo A en este periodo de evaluación. 
+
+Además, la gráfica muestra que de hecho la producción de artículos tipo A durante el periodo evaluado se concentra en un número reducido de investigadores: 
+
+Por ejemplo en el DEUMA, el departamento que generó el mayor número de publicaciones A en este periodo, son 5 investigadores los que generaron el 70% del total: Manzanares Rivera, José Luis (6 publicaciones, 31.6%), Bringas Rábago Nora Leticia (2 publicaciones, 10.5%), García Ochoa, Rigoberto (2 publicaciones, 10.5%), González Ávila, María Eugenia (2, 10.5%) y Toudert Djamel, Eddine (2, 10.5%).
+
+El escenario de la concentración en el DEP es aún más acentuado con 4 investigadores que generon el 72.2% del total: Dra. Bojorquez, Chapela Letza Rocío (7 publicaciones, 38.9%), Ham Chande, Roberto, (2 publicaciones, 11.1%), Mejía Arango Silvia Elena  (2 publicaciones, 11.1%), y Uribe Salas, Felipe Javier (2 publicaciones, 11.1%).
+
+Una variable relevante en este contexto es la cantidad de  artículos tipo A generados como **autor único** y autor principal y cuantos en **coautoría**,   esta información permitiría detallar aún más el perfil del investigador y ponderar el esfuerzo y compromiso en el cumplimiento de las obligaciones que establece el EPA. 
+
+
+Esta información no está disponible públicamente como parte de la presentación que se difundió el día del consejo académico 2018.  (insumo de este análisis), pero sin duda es una variable importante.
+
+En el caso por ejemplo de investigadores como José Luis Manzanares Rivera, el 100% de los artículos tipo A publicados en el periodo son como autor principal.
+
+Podría ser tentador argumentar que: dado que el DEUMA y DEP son los departamentos con el mayor número de investigadores evaluados  (22 y 21 miembros) respectivamente, esto determina la posición relativa en la generación de artículos de calidad tipo A.
+
+
+No obstante, este argumento no necesariamente es válido. Para demostrar este punto se presenta a continuación la producción en artículos tipo B, C y capítulos de libro por departamento.
+
+
+```{r}
+b<-m18%>%mutate(q2=Artículos_B+Artículos_C+cap_Aut+cap_Coaut.)%>%
+  group_by(Departamento)%>%
+  summarize(total=sum(q2))
+
+
+plt3<-ggplot(b, aes(fct_reorder(Departamento,total), total, fill=Departamento))+
+  geom_col()+ 
+  coord_flip()+
+  labs(y="Publicaciones", subtitle="Por departamento académico", x="Departamento",title="Artículos tipo B,C y capítulos publicados 2018")+
+  theme_light()
+
+ggplotly(plt3)
+```
+
+
+Vemos que de hecho otros departamentos distintos a DEUMA y DEP son los que se concentran en este tipo de productos de menor ponderación dentro del instrumento de evalaución SIEVA, principalmente el líder en este rubro es el **DES** con 65 publicaciones lo que implica un promedio de 5 publicaciones por investigador (4.6 para ser precisos).
+
+### 3. Mujeres y Hombres en El Colef.
+
+
+```{r, fig.height = 6, fig.width =8}
+
+plt<-ggplot(m18, aes(pts_prod,Hrs_cls, colour=Sexo, label=Nombre))+
+  scale_colour_manual(values=c("deepskyblue3", "deeppink"))+
+  geom_point(aes(size=pts_prod),alpha=.5)+
+  theme_light()+
+  stat_smooth( method=lm, se=FALSE)+
+labs(y="Horas clase", x="Publicaciones (pts)",subtitle="Evalaución 2018", x="",title="Relación Docencia-Investigación")+
+labs(size="Puntos")+
+  geom_vline(xintercept=9.4,linetype="dashed", size=.7, color="darkgreen")+
+geom_vline(xintercept=2.8,linetype="dashed", size=.7,color="red")+
+annotate("segment", x=9.4, xend=30, y=300, yend=300,  size=.5, color="darkgreen", arrow=arrow(length=unit(.2,"cm")))+
+annotate("segment", x=2.8, xend=0, y=275, yend=275,  size=.5, color="red", arrow=arrow(length=unit(.2,"cm")))+
+annotate("text", x=1.5, y=290, label="Ptil25")+
+annotate("text", x=18, y=309, label="Percentil 75")+
+annotate("text", x=18, y=319, label="Alta productividad")
+    
+
+ggplotly(plt)
+
+```
+
+
+
+Considerando dos de las actividades sustantivas establecidas en la regulación vigente de la institución, podemos observar que los investigadores que más publican son los que imparten más clases, (pendiente positiva en la línea de la gráfica) sin embargo, son las **mujeres** quienes participan más en **Docencia**, (la diferencia es estadísticamente significativa). 
+
+Considerando la carga docente vemos que las investigadoras en promedio impartieron en el periodo evaluado **88 horas**, lo que se traduce en una importante **área de oportunidad**, ya que esto implica la impartición de prácticamente un curso completo de 45hrs.  por año! 
+
+
+En cuanto a la generación de publicaciones por sexo no se observa una diferencia estadísticamente significativa entre la producción promedio de Hombres (7 pts promedio) y Mujeres (6 pts). 
+
+Este rasgo del perfil de la producción de publicaciones refleja  la distribución balanceada de la planta académica (evaluada) de El Colef por sexo. 53 Hombres (55%) 42, Mujeres (45%).
+
+
+Adicionalmente la gráfica permite identificar tres grupos de profesores por su nivel de participación en la vida académica. 
+
+El primero grupo integrado por 17 profesores denominado de alta productividad   definido por aquellos cuya puntuación en la evaluación es igual o superior el percentil 75. El segundo entre el percentil 25 y el 75 y el tercero, los investigadores con una puntuación inferior al percentil 25. 
+
+
+##### 4. Compromiso en docencia,  una área de oportunidad.
+
+Para tener una perspectiva de la participación en docencia por sede la siguiente gráfica muestra la distribución de las horas impartidas para las 7 sedes.
+
+```{r}
+plt5<-ggplot(m18, aes(reorder(Sede, Hrs_cls, FUN = median), Hrs_cls)) +
+  geom_boxplot(aes(fill=Sede ))+
+  theme_light()+
+  labs(y="Horas clase", subtitle="Evaluación 2018", x="Sede",title="Participación en Docencia")+
+        theme_classic(base_size = 14)+
+  guides(fill=FALSE)+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggplotly(plt5)
+```
+
+
+El rubro de docencia da cuenta de niveles críticos de compromiso por parte de los investigadores en cada sede. 
+
+
+La sede Piedras Negras tiene el menor promedio de horas clase impartidas con 39.1 hrs lo que representa prácticamente 20 horas por año en promedio, le sigue Matamoros con 57.8 horas, Mexicali con 60, Monterrey, Juárez, Tijuana y Nogales con  111 horas, el mayor nivel promedio entre las sedes de El Colef. 
+
+
+No obstante, los diversos niveles de participación, es evidente que la impartición de clases representa una debilidad que se convierte en un área de oportunidad prioritaria.
+
+Con la finalidad de atender esta debilidad evidente en se detallan **dos propuestas concretas** para el diseño de estrategias que ayuden a materializar el compromiso institucional de los investigadores en este rubro.
+
