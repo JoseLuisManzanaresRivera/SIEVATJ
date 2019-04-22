@@ -103,7 +103,7 @@ Adep<-group_by(m18,Departamento)%>%
 pltA<-ggplot(Adep, aes(fct_reorder(Departamento,total), total, fill=Departamento))+
   geom_col()+ 
   coord_flip()+
-  labs(y="Artículos", subtitle="Por departamento académico", x="Nombre del investigador",title="Artículos tipo A publicados 2018")+
+  labs(y="Artículos", subtitle="Por departamento académico", x="Departamento",title="Artículos tipo A publicados 2018")+
   theme_light()
 
 ggplotly(pltA)
