@@ -39,5 +39,11 @@ Hoy en día existe una creciente demanda entre la comunidad para cursar programa
 En este contexto el abordaje de las condiciones de salud que se presentan en la regiones fronterizas constituyen un campo de estudio de enorme potencial en el que El Colef puede aportar al dar respuesta a la demanda por contenidos de alta especialidad existente. Y al mismo tiempo aprovechar el capital humano especializado que se ha conformado en esta área del conocimiento  en El Colef.
 
 
-La creación de este progama permitirá atraer recursos financieros, necesarios en la coyuntura actual que enfrentan los CPI en el país ya que es un programa auto susntencable en terminos finencieros. 
+##### Características del programa:
+
+El Diplomado en **Análisis de los Patrones de salud en las fronteras**  PSF es un programa único que combina una sólida base teórica desde  una orientación a nuevas metodologías de análisis en el contexto  grandes volúmenes de datos.
+En especial se sustenta en el enfoque de análisis bajo preceptos de replicabilidad, utilizando herramientas que hoy marcan el rumbo para el análisis de datos como R markdown y Python.
+
+
+La creación de este progama permitirá atraer recursos, necesarios en la coyuntura actual que enfrentan los CPI en el país ya que es un programa auto susntencable en terminos finencieros. 
  
