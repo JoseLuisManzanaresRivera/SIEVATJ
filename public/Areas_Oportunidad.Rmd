@@ -3,3 +3,16 @@ title: " "
 output: html_notebook
 ---
   
+  
+##### a)	CEE 
+
+El papel de la CEE es inapropiado, duplica un objetivo implícito en el proceso de evaluación del instrumento establecido (SIEVA).
+La calidad de los productos está claramente ponderada por el SIEVA, la calidad de los productos está definida acorde con estándares internacionales ej. Indexación en SCIMAGO, Thomson Reuters Master Journal list , JCR, lo cual está en línea también con los requerimientos del Sistema Nacional de Investigadores.
+La puntuación asignada por el SIEVA además de considerar todas las actividades que la reglamentación vigente por el EPA establece como obligaciones de los investigadores (ej. Docencia, Investigación, Difusión, vinculación, etc.), ya considera el aspecto de calidad explícito en la clasificación de publicaciones incluidas las revistas, libros y capítulos de libro.  
+Un par de ejemplos^[La fuente de infomación para esta sección del análisis se basa en la matriz del dictamen de la CEE, misma que se  difundió publicamente mediante el Acta de sesión  del CCE en correo con fecha  dia 11 de marzo de 2019] para mostrar las debilidades de este rubro dentro del actual esquema de evaluación, que si bien se reconoce que el propósito original de dicho órgano es consistente con la búsqueda de calidad y trasparencia, en la práctica puede generar resultados no consistentes.  
+
+![](/img/cee1.jpg)
+![](/img/cee3.jpg)
+![](/img/cee2.jpg)
+
+En este sentido la valoración de la comisión Externa no siempre genera resultados del todo consistentes y en mi humilde opinión puede convertirse en un espacio para la discrecionalidad que no contribuye con la transparencia.
