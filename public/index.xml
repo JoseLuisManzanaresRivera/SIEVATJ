@@ -123,6 +123,15 @@ Follow the following steps:
     
     <item>
       <title></title>
+      <link>/ao.nb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/ao.nb/</guid>
+      <description>code{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/an%C3%A1lisis.nb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -137,6 +146,16 @@ Follow the following steps:
       
       <guid>/propuestas.nb/</guid>
       <description>code{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
+    </item>
+    
+    <item>
+      <title> </title>
+      <link>/ao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/ao/</guid>
+      <description>Áreas de oportunidad:Comité Externo de Evaluación.El CEE duplica un objetivo implícito en el proceso de evaluación del instrumento establecido (SIEVA).
+La calidad de los productos está claramente ponderada por el SIEVA, la calidad de los productos está definida acorde con estándares internacionales ej. Indexación en SCIMAGO, Thomson Reuters Master Journal list , JCR, lo cual está en línea también con los requerimientos del Sistema Nacional de Investigadores. La puntuación asignada por el SIEVA además de considerar todas las actividades que la reglamentación vigente por el EPA establece como obligaciones de los investigadores (ej.</description>
     </item>
     
     <item>
