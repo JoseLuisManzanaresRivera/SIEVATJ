@@ -116,7 +116,8 @@ pa<-ggplot(i, aes(fct_reorder(Departamento,w_mean), w_mean, fill=Departamento))+
   annotate("text", x="DEC", y=5, label="1")+
   annotate("text", x="DEAP", y=5, label="0.45")+
   annotate("text", x="DES", y=5, label="1")+
-  annotate("text", x="DEE", y=5, label="2")
+  annotate("text", x="DEE", y=5, label="2")+
+  theme(legend.position='none')
 
   
   
@@ -232,7 +233,8 @@ bp<-ggplot(inve, aes(fct_reorder(Departamento,bmed), bmed, fill=Departamento))+
   geom_col()+ 
   coord_flip()+
   labs(y="Publicaciones", subtitle="Promedio por investigador 2017,2018,2019", x="Departamento",title="Artículos tipo B,C y capítulos de libro")+
-  theme_light()
+  theme_light()+
+  theme(legend.position='none')
 
 ggsave("b_c_caps3.jpg", width = 25, height = 17, units = "cm",dpi=300)
 
@@ -297,7 +299,9 @@ l2<-ggplot(lib.media, aes(fct_reorder(Departamento,libros), libros, fill=Departa
   annotate("text", x="DEC", y=5, label="2")+
   annotate("text", x="DEAP", y=5, label="2")+
   annotate("text", x="DES", y=5, label="1")+
-  annotate("text", x="DEE", y=5, label="2")
+  annotate("text", x="DEE", y=5, label="2")+
+  theme(legend.position='none')
+
 
 l2
 ggsave("libros3.jpg", width = 25, height = 17, units = "cm",dpi=300)
@@ -390,11 +394,10 @@ write.csv(idep,"idep.csv")
 
 
 
-```{r, echo=FALSE,warning=FALSE,message=FALSE, fig.height = 6, fig.width =8}
+```{r, echo=FALSE,warning=FALSE,message=FALSE, fig.height = 6, fig.width =10}
 
 pts_hrs<-read.csv('pts_hrs.csv')%>%
   select(-X)
-summary(pts_hrs)
 
 plt<-ggplot(pts_hrs, aes(pts,hrs, colour=Sexo, label=Nombre))+
   scale_colour_manual(values=c("deepskyblue3", "deeppink"))+
@@ -430,7 +433,7 @@ A partir del desemepño en docencia y publicaciones Se definen 4 cuadrantes:
 + C1 Alta productividad-Docencia, 
 + C2 Alta docencia-Baja producción
 + C3 Baja docenca-poducción. 
-+ c4 Alta productividad-Baja docencia.
++ C4 Alta productividad-Baja docencia.
 
 Siendo el c3 el que presenta una área de oportunidad para mejorar el compromiso institucional.
 
