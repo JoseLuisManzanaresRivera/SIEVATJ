@@ -180,9 +180,9 @@ NOA<-select(tres,Nombre, date,Departamento, Artículos_A)%>%
 
 ```
 
-La mayoría de los investigadores generaron publicaciones tipo A en el periodo.  $66\%$,  (57/86).
+La mayoría de los investigadores generaron publicaciones tipo A en el periodo.  66%,  (57/86).
 
-Uno de cada tres investigadores en El Colef  ($33\%$) no produjeron artículos de calidad tipo A en los últimos tres periodos evaluados 29/86.
+Uno de cada tres investigadores en El Colef  (33%) no produjeron artículos de calidad tipo A en los últimos tres periodos evaluados 29/86.
 
 
 Además, la gráfica muestra que de hecho la producción de artículos tipo A durante el periodo evaluado se concentra en un número reducido de investigadores: 
