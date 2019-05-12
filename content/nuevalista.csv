@@ -1,0 +1,113 @@
+,Nombre,Departamento,Sexo,Sede,n
+1,"Arzaluz Solano, María del Socorro",DEAP,Mujer,Monterrey,1
+2,"Espinoza Valle, Víctor Alejandro",DEAP,Hombre,Tijuana,1
+3,"García Quiroz, Blanca Cecilia",DEAP,Mujer,Monterrey,1
+4,"Hernández Hernández, Alberto",DEAP,Hombre,Tijuana,1
+5,"López León, María Artemisa",DEAP,Mujer,Matamoros,1
+6,"Monsiváis Carrillo, Carlos Alejandro",DEAP,Hombre,Tijuana,1
+7,"Ramos García, José María",DEAP,Mujer,Tijuana,1
+8,"Rubio Campos, Jesús",DEAP,Hombre,Monterrey,1
+9,"Sánchez Munguía, Vicente",DEAP,Hombre,Tijuana,1
+10,"Sarabia Ríos, Cecilia",DEAP,Mujer,Monterrey,1
+11,Zavala Álvarez José,DEAP,Hombre,Mexicali,1
+12,"Alonso Meneses, Guillermo",DEC,Hombre,Tijuana,1
+13,"Contreras Delgado, Camilo",DEC,Hombre,Monterrey,1
+14,"Cruz Sierra, Salvador",DEC,Hombre,Juárez,1
+15,"Fernández De Juan, Teresa",DEC,Mujer,Tijuana,1
+16,"Monárrez Fragoso, Julia Estela",DEC,Mujer,Juárez,1
+17,"Nieto Camacho, Ana Lilia",DEC,Mujer,Tijuana,1
+18,"Olmos Aguilera, Miguel",DEC,Hombre,Tijuana,1
+19,"París Pombo, María Dolores",DEC,Mujer,Tijuana,1
+20,"Ruiz Marrujo, Olivia Teresa",DEC,Mujer,Tijuana,1
+21,"Taylor Hansen, Lawrance Douglas",DEC,Hombre,Tijuana,1
+22,"Valencia Triana, Margarita",DEC,Mujer,Tijuana,1
+23,"Velasco Ortiz, Matilde Laura",DEC,Mujer,Tijuana,1
+24,"Zárate Ruiz, Arturo",DEC,Hombre,Matamoros,1
+25,"Brugués Rodríguez, Alejandro",DEE,Hombre,Juárez,1
+26,"Calderón Villarreal, Cuauhtémoc",DEE,Hombre,Tijuana,1
+27,"Corrales Corrales, Salvador",DEE,Hombre,Monterrey,1
+28,"Díaz Bautista, Alejandro",DEE,Hombre,Tijuana,1
+29,"Díaz González, Eliseo",DEE,Hombre,Tijuana,1
+30,"Fuentes Flores, Noé Arón",DEE,Hombre,Tijuana,1
+31,"González Andrade, Salvador",DEE,Hombre,Tijuana,1
+32,"Hernández Bielma, Leticia",DEE,Mujer,Tijuana,1
+33,"Mendoza Cota, Jorge Eduardo",DEE,Hombre,Tijuana,1
+34,"Rivera Castañeda, Patricia",DEE,Mujer,Tijuana,1
+35,"Vásquez Galán, Belem Iliana",DEE,Mujer,Monterrey,1
+36,"Acosta Díaz, Félix",DEP,Hombre,Tijuana,1
+37,"Bojórquez Chapela, Ietza Rocio",DEP,Mujer,Tijuana,1
+38,"Calva Sánchez, Luis Enrique",DEP,Hombre,Monterrey,1
+39,"Coubès, Marie-Laure",DEP,Mujer,Tijuana,1
+40,"Cruz Piñeiro, Rodolfo",DEP,Hombre,Tijuana,1
+41,"Cueva Luna, Teresa Elizabeth",DEP,Mujer,Matamoros,1
+42,"González Galbán, Humberto",DEP,Hombre,Tijuana,1
+43,"González Ramírez, Raúl Sergio",DEP,Hombre,Tijuana,1
+44,"Ham Chande, Roberto",DEP,Hombre,Tijuana,1
+45,"Ley Cervantes, Melissa",DEP,Mujer,Monterrey,1
+46,"López Estrada, Silvia",DEP,Mujer,Tijuana,1
+47,"Palma Cabrera, Yolanda",DEP,Mujer,Tijuana,1
+48,"Peña Muñoz, Jesús Javier",DEP,Hombre,Juárez,1
+49,"Schwartz Post, Norah Anita",DEP,Mujer,Tijuana,1
+50,"Uribe Salas, Felipe Javier",DEP,Hombre,P.Negras,1
+51,"Vargas Valle, Eunice Danitza",DEP,Mujer,Tijuana,1
+52,"Vázquez Delgado, Blanca Delia",DEP,Mujer,Monterrey,1
+53,"Von Glascoe, Christine Alysse",DEP,Mujer,Tijuana,1
+54,"Ybañez Zepeda, Elmyra",DEP,Mujer,Tijuana,1
+55,"Alarcón Acosta, Rafael G.",DES,Hombre,Tijuana,1
+56,"Anguiano Téllez, María Eugenia",DES,Mujer,Tijuana,1
+57,"Barajas Escamilla, María del Rosío",DES,Mujer,Tijuana,1
+58,"Carrillo Viveros, Jorge Héctor",DES,Hombre,Tijuana,1
+59,"Gomis Hernández, Redi",DES,Hombre,Tijuana,1
+60,"Hernández Hernández, Oscar Misael",DES,Hombre,Matamoros,1
+61,"Hualde Alfaro, Alfredo",DES,Hombre,Tijuana,1
+62,"Jurado Montelongo, Mario Alberto",DES,Hombre,Monterrey,1
+63,"Matus Ruiz, Maximino",DES,Hombre,Tijuana,1
+64,"Miker Palafox, Martha",DES,Mujer,Tijuana,1
+65,"Odgers Ortiz, Olga",DES,Mujer,Tijuana,1
+66,"Pérez Floriano, Lorena Raquel",DES,Mujer,Tijuana,1
+67,"Solís Pérez, Marlene Celia",DES,Mujer,Tijuana,1
+68,"Aguilar Benítez, Ismael",DEUMA,Hombre,Monterrey,1
+69,"Bringas Rábago, Nora Leticia",DEUMA,Mujer,Tijuana,1
+70,"Castro Ruiz, José Luis",DEUMA,Hombre,Monterrey,1
+71,"Córdova Bojórquez, Gustavo",DEUMA,Hombre,Juárez,1
+72,"Córdova y Vázquez, Ana",DEUMA,Mujer,Juárez,1
+73,"Cortez Lara, Alfonso Andrés",DEUMA,Hombre,Mexicali,1
+74,"Fuentes Flores, César Mario",DEUMA,Hombre,Juárez,1
+75,"García Ochoa, Rigoberto",DEUMA,Hombre,Nogales,1
+76,"González Ávila, María Eugenia",DEUMA,Mujer,Monterrey,1
+77,"Manzanares Rivera, José Luis",DEUMA,Hombre,Nogales,1
+78,"Muñoz Meléndez, Gabriela",DEUMA,Mujer,Tijuana,1
+79,"Ojeda Revah, Lina",DEUMA,Mujer,Tijuana,1
+80,"Oliveras González, Xavier",DEUMA,Hombre,Matamoros,1
+81,"Peña Medina, Sergio",DEUMA,Hombre,Juárez,1
+82,"Pombo López, Oscar Alberto",DEUMA,Hombre,Tijuana,1
+83,"Riemann González, Hugo",DEUMA,Hombre,Tijuana,1
+84,"Sánchez Rodríguez, Roberto Alejandro",DEUMA,Hombre,Tijuana,1
+85,"Santes Álvarez, Ricardo Valentín",DEUMA,Hombre,Tijuana,1
+86,"Toudert Djamel, Eddine",DEUMA,Hombre,Tijuana,1
+87,"Vázquez León, Carlos Israel",DEUMA,Hombre,Tijuana,1
+88,"Alarcón Medina, Rafael",DEC,Hombre,Tijuana,1
+89,Alegría Olazábal Tito Alejandro,DEUMA,Hombre,Tijuana,1
+90,Almaraz Alvarado Araceli,DES,Mujer,Tijuana,1
+91,Bringas Rábago Nora Leticia,DEUMA,Mujer,Tijuana,1
+92,"Bruce, Benjamín Patrick",DEC,Hombre,Monterrey,1
+93,Bustamante Fernández Jorge Agustin,DES,Hombre,Tijuana,1
+94,De la Parra Rentería Carlos Alfonso,DEUMA,Hombre,Tijuana,1
+95,Díaz Carnero Emiliano Ignacio,DEC,Hombre,Juárez,1
+96,"Escala Rabadán , Luis",DEC,Hombre,Tijuana,1
+97,"Hernández López, Ana Gabriela",DEC,Mujer,Tijuana,1
+98,"López García, Ana Isabel",DEC,Mujer,Tijuana,1
+99,Maier-Hirsch Elizabeth Jean,DEC,Mujer,Tijuana,1
+100,Medina Parra Rosa Isabel,DEC,Mujer,Juárez,1
+101,Mejía Arango Silvia Elena,DEP,Mujer,Tijuana,1
+102,Peláez Herreros Óscar,DEE,Hombre,Tijuana,1
+103,Pérez Caballero Jesús,DEC,Hombre,Matamoros,1
+104,"Portillo Tellez, María del Carmen",DEP,Mujer,P.Negras,1
+105,Quintero Ramírez Cirila,DES,Mujer,Matamoros,1
+106,Rangel Gómez María Gudelia,DEP,Mujer,Tijuana,1
+107,"Reyes Santos, Marcos Sergio",DEAP,Hombre,Tijuana,1
+108,Rodríguez Esteves Juan Manuel,DEUMA,Hombre,Tijuana,1
+109,"Rosales Martínez, Yetzi",DEP,Mujer,Monterrey,1
+110,Sumano Rodríguez José Andrés,DEC,Hombre,Matamoros,1
+111,Valenzuela Arce José Manuel,DEC,Hombre,Tijuana,1
+112,"Vera López, Juana Isabel",DEAP,Mujer,P.Negras,1
