@@ -34,10 +34,9 @@ library(plotly)
 
 
 
-### Análisis de la producción 
+### Análisis de la producción.
 
-##### 1.	Producción en las Sedes.^[
-*Nota:* dado que las sedes con más investigadores generan un volumen global mayor de producción, un indicador de desempeño que controla por el tamaño de cada sede es la producción per cápita por sede. Este indicador se calcula con la Suma del puntaje por sede entre el número de investigadores de la sede en cuestión. Este indicador permite contrastar el desempeño real en cada sede.]
+#### Publicación  de libros.
 
 
 La producción de libros es  fundamental en un centro de investigación, no obstante estos son proyectos de largo plazo y expresiones de la trayectoria academica que reflejan un cierto grado de consolidación y liderazgo en un tema. 
@@ -116,15 +115,7 @@ Hoy en día estos dos tipos de productos se valoran igual en el sistema de evalu
 
 
 
-
-
-
-
-
-
-
 ##### 2. Calidad vs. Cantidad de producción
-
 
 Un argumento a menudo enfatizado es la importancia de generar producción de calidad en contraste con un gran volumen de productos.
 
@@ -298,7 +289,10 @@ bp
   
 DEAP y DES los líderes en este tipo de productos.
 
-### 3. Las Sedes.
+### 3.	Producción en las Sedes.^[
+*Nota:* dado que las sedes con más investigadores generan un volumen global mayor de producción, un indicador de desempeño que controla por el tamaño de cada sede es la producción per cápita por sede. Este indicador se calcula con la Suma del puntaje por sede entre el número de investigadores de la sede en cuestión. Este indicador permite contrastar el desempeño real en cada sede.]
+
+
 
 ```{r, echo=FALSE,warning=FALSE,message=FALSE}
 tres<-read.csv('tres.csv')
