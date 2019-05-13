@@ -40,34 +40,86 @@ library(plotly)
 *Nota:* dado que las sedes con más investigadores generan un volumen global mayor de producción, un indicador de desempeño que controla por el tamaño de cada sede es la producción per cápita por sede. Este indicador se calcula con la Suma del puntaje por sede entre el número de investigadores de la sede en cuestión. Este indicador permite contrastar el desempeño real en cada sede.]
 
 
+La producción de libros es  fundamental en un centro de investigación, no obstante estos son proyectos de largo plazo y expresiones de la trayectoria academica que reflejan un cierto grado de consolidación y liderazgo en un tema. 
+
+Generalmente la inversión de tiempo necesaria para generar un libro es mayor que por ejemplo un artículo tipo A.  
+
+
 ```{r, echo=FALSE,warning=FALSE,message=FALSE}
+
 tres<-read.csv('tres.csv')
-ngls<-filter(tres,Sede=="Nogales")
 
-pts<-group_by(tres,date,Sede)%>%
-  summarize(Inv_sede=n(),Pts_sede=sum(pts_prod))%>%
-  mutate(PtsPerInv=round(Pts_sede/Inv_sede,2))%>%
-  arrange(desc(PtsPerInv))%>%
-  group_by(Sede)%>%
-  summarize(PtsPerInvm3=mean(PtsPerInv))%>%
+l<-group_by(tres,date,Departamento)%>%
+  summarize(l=sum(L_Autor))%>%
+  arrange(desc(l))%>%
+  filter(l!=0)
+
+
+la<-group_by(tres,date,Departamento)%>%
+  summarize(inv=n())%>%
+  arrange(desc(inv))%>%
+  group_by(Departamento)%>%
+  left_join(l)%>%
+  filter(!is.na(l))%>%
+  mutate(ratio=l/inv)%>%
   ungroup()%>%
-mutate(Sede=fct_reorder(Sede,PtsPerInvm3))
+  group_by(Departamento)%>%
+  summarize(l=sum(ratio))
+
+## la muestra cuantos libros por investigador por departamento en los 3 años sumados. Dado que la producción de libros es ínfima (los valores no llegan a 1), es necesario crear mecanísmos para incentivar la producción de libros. Un rubro que hoy debe incentivarse con acciones claras.  
+
+libros<-group_by(tres,date,Departamento)%>%
+  summarize(inv=n())%>%
+  arrange(desc(inv))%>%
+  group_by(Departamento)%>%
+  left_join(l)%>%
+  filter(!is.na(l))%>%
+  summarise(libros=sum(l))
+ 
+  lib.media<-group_by(tres,date,Departamento)%>%
+  summarize(inv=n())%>%
+  arrange(desc(inv))%>%
+  group_by(Departamento)%>%
+  left_join(l)%>%
+  filter(!is.na(l))%>%
+  summarise(w_mean = round(weighted.mean(l,inv)))%>%
+  left_join(libros)  
 
 
-ggplot(pts,aes(Sede,PtsPerInvm3, fill=Sede))+
+l2<-ggplot(lib.media, aes(fct_reorder(Departamento,libros), libros, fill=Departamento))+
   geom_col()+
   coord_flip()+
-  scale_fill_brewer(palette="Oranges")+
-  labs(y="Puntos por investigador", x="Sede",title="Puntuación por sede Según número de investgadores", subtitle="SIEVA Histórico 3 años 2017,2018,2019")+
+  labs(y="Libros", subtitle="Por departamento académico, Histórico SIEVA, 2017,2018,2019", x="Departamento",title="Libros de Autor")+
   theme_light()+
-  guides(fill=FALSE)
+  annotate("text", x="DEUMA", y=5, label="1")+
+  annotate("text", x="DEP", y=5, label="1")+
+  annotate("text", x="DEC", y=5, label="2")+
+  annotate("text", x="DEAP", y=5, label="2")+
+  annotate("text", x="DES", y=5, label="1")+
+  annotate("text", x="DEE", y=5, label="2")+
+  theme(legend.position='none')
 
 
-
-ggsave("pts_sede3.jpg", width = 25, height = 17, units = "cm",dpi=300)
+l2
+ggsave("libros3.jpg", width = 25, height = 17, units = "cm",dpi=300)
 ```
 
-La producción promedio por investigador en la Sede Nogales duplica la producción de Tijuana equivale  a la producción conjnta de las sedes Juárez y Monterrey  y  representa 5 veces la producción de sedes como Mexicali. 
+Es un tipo de investigación que es mas común en **DEC** y **DEAP**.
+
+La producción de libros es ínfima, esto se percibe como **área de oportunidad**
+
+Importante considerar revalorar este rubro para incentivar su producción.
+
+La inversión de tiempo necesaria para generar un libro es mayor que por ejemplo un artículo tipo A.
+
+Hoy en día estos dos tipos de productos se valoran igual en el sistema de evaluación.
+
+
+
+
+
+
+
 
 
 
@@ -246,75 +298,70 @@ bp
   
 DEAP y DES los líderes en este tipo de productos.
 
-
+### 3. Las Sedes.
 
 ```{r, echo=FALSE,warning=FALSE,message=FALSE}
-
 tres<-read.csv('tres.csv')
+ngls<-filter(tres,Sede=="Nogales")
 
-l<-group_by(tres,date,Departamento)%>%
-  summarize(l=sum(L_Autor))%>%
-  arrange(desc(l))%>%
-  filter(l!=0)
-
-
-la<-group_by(tres,date,Departamento)%>%
-  summarize(inv=n())%>%
-  arrange(desc(inv))%>%
-  group_by(Departamento)%>%
-  left_join(l)%>%
-  filter(!is.na(l))%>%
-  mutate(ratio=l/inv)%>%
+pts<-group_by(tres,date,Sede)%>%
+  summarize(Inv_sede=n(),Pts_sede=sum(pts_prod))%>%
+  mutate(PtsPerInv=round(Pts_sede/Inv_sede,2))%>%
+  arrange(desc(PtsPerInv))%>%
+  group_by(Sede)%>%
+  summarize(PtsPerInvm3=mean(PtsPerInv))%>%
   ungroup()%>%
-  group_by(Departamento)%>%
-  summarize(l=sum(ratio))
-
-## la muestra cuantos libros por investigador por departamento en los 3 años sumados. Dado que la producción de libros es ínfima (los valores no llegan a 1), es necesario crear mecanísmos para incentivar la producción de libros. Un rubro que hoy debe incentivarse con acciones claras.  
-
-libros<-group_by(tres,date,Departamento)%>%
-  summarize(inv=n())%>%
-  arrange(desc(inv))%>%
-  group_by(Departamento)%>%
-  left_join(l)%>%
-  filter(!is.na(l))%>%
-  summarise(libros=sum(l))
- 
-  lib.media<-group_by(tres,date,Departamento)%>%
-  summarize(inv=n())%>%
-  arrange(desc(inv))%>%
-  group_by(Departamento)%>%
-  left_join(l)%>%
-  filter(!is.na(l))%>%
-  summarise(w_mean = round(weighted.mean(l,inv)))%>%
-  left_join(libros)  
+mutate(Sede=fct_reorder(Sede,PtsPerInvm3))
 
 
-l2<-ggplot(lib.media, aes(fct_reorder(Departamento,libros), libros, fill=Departamento))+
+ggplot(pts,aes(Sede,PtsPerInvm3, fill=Sede))+
   geom_col()+
   coord_flip()+
-  labs(y="Libros", subtitle="Por departamento académico, Histórico SIEVA, 2017,2018,2019", x="Departamento",title="Libros de Autor")+
+  scale_fill_brewer(palette="Oranges")+
+  labs(y="Puntos por investigador", x="Sede",title="Puntuación por sede Según número de investgadores", subtitle="SIEVA Histórico 3 años 2017,2018,2019")+
   theme_light()+
-  annotate("text", x="DEUMA", y=5, label="1")+
-  annotate("text", x="DEP", y=5, label="1")+
-  annotate("text", x="DEC", y=5, label="2")+
-  annotate("text", x="DEAP", y=5, label="2")+
-  annotate("text", x="DES", y=5, label="1")+
-  annotate("text", x="DEE", y=5, label="2")+
-  theme(legend.position='none')
+  guides(fill=FALSE)
 
 
-l2
-ggsave("libros3.jpg", width = 25, height = 17, units = "cm",dpi=300)
+
+ggsave("pts_sede3.jpg", width = 25, height = 17, units = "cm",dpi=300)
 ```
-La producción de libros es ínfima, esto se percibe como **area de oportunidad**, los libros son importantes y son proyectos de más largo plazo, la inversión de tiempo necesaria para generar un libro es mayor.
 
-Importante considerar revalorar este rubro para incentivar su producción.
+La producción promedio por investigador en la Sede Nogales duplica la producción de Tijuana equivale  a la producción conjnta de las sedes Juárez y Monterrey  y  representa 5 veces la producción de sedes como Mexicali. 
 
-Es un tipo de investigación que es mas común en DEC y DEAP. Importante fomentar el trabajo que se realiza en todos los departamentos y promover las fortalezas metodológicas propias de cada disciplina.
+##### 4. Compromiso en docencia,  una área de oportunidad.
+
+Para tener una perspectiva de la participación en docencia por sede la siguiente gráfica muestra la distribución de las horas impartidas para las 7 sedes.
+
+```{r,echo=FALSE,warning=FALSE,message=FALSE}
+tres<-read.csv('tres.csv')
+
+
+mdocen<-tres%>%group_by( Sede)%>%
+summarize(pts=mean(pts_prod),hrs=mean(Hrs_cls))
+
+doc<-ggplot(tres, aes(reorder(Sede, Hrs_cls, FUN = median), Hrs_cls)) +
+  geom_boxplot(aes(fill=Sede ))+
+  theme_light()+
+  labs(y="Horas clase", subtitle="Historico SIEVA 2017,2018,2019 ", x="Sede",title="Participación en Docencia")+
+theme_classic(base_size = 14)+
+theme(legend.position='none')+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+      ggplotly(doc)
+
+ggsave("boxplot.jpg", width = 25, height = 17, units = "cm",dpi=300)
+```
+
+La distribución en horas de docencia actual únicametne refleja el diseño insttuional en el que tenemos una sede principal: Tijuana donde se concentran la gran mayoria de los programas docentes  y otras sedes que en su mayoria no cuantan con programas docentes.
+
+Este diseño condicional el perfil de activiades docentes de lso docentes entre las sedes.
+
+Considerando esta estructura el SIEVA establece provisiones que compensan esta desequilibrio estrucurral.  La via de evalaución con solo publicaciones encuentra su justificación en este hecho.
 
 
 
-### 3. Mujeres y Hombres en El Colef.
+### 5. Mujeres y Hombres en El Colef.
 
 
 
@@ -417,7 +464,6 @@ ggsave("D-I.jpg", width = 25, height = 17, units = "cm",dpi=300)
 ```
 
 
-
 Considerando dos de las actividades sustantivas establecidas en la regulación vigente de la institución, podemos observar que los investigadores que más publican son los que imparten más clases, (pendiente positiva en la línea de la gráfica) sin embargo, son las **mujeres** quienes participan más en **Docencia**, (la diferencia es estadísticamente significativa). 
 
 Considerando la carga docente vemos que las investigadoras en promedio impartieron en el periodo evaluado **78 horas**, lo que se traduce en una importante **área de oportunidad**, ya que esto implica la impartición de prácticamente un curso completo de 45hrs.  por año! 
@@ -474,35 +520,15 @@ ptd
 ggsave("c3.jpg", width = 25, height = 17, units = "cm",dpi=300)
 ```
 
-##### 4. Compromiso en docencia,  una área de oportunidad.
-
-Para tener una perspectiva de la participación en docencia por sede la siguiente gráfica muestra la distribución de las horas impartidas para las 7 sedes.
-```{r,echo=FALSE,warning=FALSE,message=FALSE}
-tres<-read.csv('tres.csv')
-
-
-mdocen<-tres%>%group_by( Sede)%>%
-summarize(pts=mean(pts_prod),hrs=mean(Hrs_cls))
-
-doc<-ggplot(tres, aes(reorder(Sede, Hrs_cls, FUN = median), Hrs_cls)) +
-  geom_boxplot(aes(fill=Sede ))+
-  theme_light()+
-  labs(y="Horas clase", subtitle="Historico SIEVA 2017,2018,2019 ", x="Sede",title="Participación en Docencia")+
-theme_classic(base_size = 14)+
-theme(legend.position='none')+
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
-      ggplotly(doc)
-
-ggsave("boxplot.jpg", width = 25, height = 17, units = "cm",dpi=300)
-```
 
 
 
-El rubro de docencia da cuenta de niveles críticos de compromiso por parte de los investigadores en cada sede. 
 
 
-La sede Piedras Negras tiene el menor promedio de horas clase impartidas con 26.6 hrs lo que representa prácticamente 13 horas por año en promedio, le sigue Mexicali con 30, Matamoros con 53 horas,  Monterrey, Juárez, Tijuana y Nogales con  98 horas, el mayor nivel promedio entre las sedes de El Colef. 
 
 
-No obstante, los diversos niveles de participación, es evidente que la impartición de clases representa una debilidad que se convierte en un área de oportunidad prioritaria.
+
+
+
+
+
