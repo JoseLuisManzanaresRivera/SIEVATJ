@@ -30,10 +30,6 @@ library(plotly)
 ```
 
 
-
-
-
-
 ### Análisis de la producción.
 
 #### Publicación  de libros.
@@ -63,7 +59,7 @@ la<-group_by(tres,date,Departamento)%>%
   mutate(ratio=l/inv)%>%
   ungroup()%>%
   group_by(Departamento)%>%
-  summarize(l=sum(ratio))
+  summarize(l=mean(ratio))
 
 ## la muestra cuantos libros por investigador por departamento en los 3 años sumados. Dado que la producción de libros es ínfima (los valores no llegan a 1), es necesario crear mecanísmos para incentivar la producción de libros. Un rubro que hoy debe incentivarse con acciones claras.  
 
@@ -88,14 +84,14 @@ libros<-group_by(tres,date,Departamento)%>%
 l2<-ggplot(lib.media, aes(fct_reorder(Departamento,libros), libros, fill=Departamento))+
   geom_col()+
   coord_flip()+
-  labs(y="Libros", subtitle="Por departamento académico, total SIEVA, 2017,2018,2019", x="Departamento",title="Libros de Autor")+
+  labs(y="Libros", subtitle="Total periodo 2017,2018,2019, promedio por año y promedio por investigador () ", x="Departamento",title="Libros de Autor por departamento académico")+
   theme_light()+
-  annotate("text", x="DEUMA", y=5, label="1")+
-  annotate("text", x="DEP", y=5, label="1")+
-  annotate("text", x="DEC", y=5, label="2")+
-  annotate("text", x="DEAP", y=5, label="2")+
-  annotate("text", x="DES", y=5, label="1")+
-  annotate("text", x="DEE", y=5, label="2")+
+  annotate("text", x="DEUMA", y=5, label="1, (0.05)")+
+  annotate("text", x="DEP", y=5, label="1, (0.05)")+
+  annotate("text", x="DEC", y=5, label="2, (0.11)")+
+  annotate("text", x="DEAP", y=5, label="2, (0.22)")+
+  annotate("text", x="DES", y=5, label="1, (0.08)")+
+  annotate("text", x="DEE", y=5, label="2, (0.13)")+
   theme(legend.position='none')
 
 
@@ -103,15 +99,17 @@ l2
 ggsave("libros3.jpg", width = 25, height = 17, units = "cm",dpi=300)
 ```
 
-Es un tipo de investigación que es mas común en **DEC** y **DEAP**.
+Es un tipo de investigación que es más común en **DEC** y **DEAP**.
 
-La inversión de tiempo necesaria para generar un libro es mayor que por ejemplo un artículo tipo A.
+No obstante la producción de libros es ínfima si comparamos con la producción de articulos tipo A, un producto que es valorado con la misma ponderación en el actual instrumento de evalaución.
 
-Hoy en día estos dos tipos de productos se valoran igual en el sistema de evaluación.
+Este rasgo  se percibe como **área de oportunidad**
 
-Importante considerar revalorar este rubro para incentivar su producción.
+La inversión de tiempo necesaria para generar un libro de autor en una editorial de reconocido prestigio puede ser considerablemente superior   que por ejemplo  la publicación de un  artículo tipo A.
 
-La producción de libros es ínfima, esto se percibe como **área de oportunidad**
+Importante reflexionar si para El Colef es importante incentivar su producción. 
+
+En caso afirmativo acciones concretas puden implementarse como  revalorar este producto en el esquema de evaluación.
 
 
 
@@ -120,7 +118,7 @@ La producción de libros es ínfima, esto se percibe como **área de oportunidad
 
 Un argumento a menudo enfatizado es la importancia de generar producción de calidad en contraste con un gran volumen de productos.
 
-Para abordareste punto se analiza a continuación la participación de los investigadores en la generación de publicaciones tipo A, la calificación de calidad más alta  establecida en la regulación vigente  (en conjunto con la elaboración de libros) y se hace el contraste por departamento.
+Para abordar este punto se analiza a continuación la participación de los investigadores en la generación de publicaciones tipo A, la calificación de calidad que en  conjunto con la elaboración de libros es la más alta  establecida en la regulación vigente. El contraste se hace por departamento.
 
 ```{r, echo=FALSE,warning=FALSE,message=FALSE}
 tres<-read.csv('tres.csv')
@@ -152,14 +150,14 @@ i<-group_by(tres,date,Departamento)%>%
 pa<-ggplot(i, aes(fct_reorder(Departamento,w_mean), w_mean, fill=Departamento))+
   geom_col()+ 
   coord_flip()+
-  labs(y="Artículos", subtitle="Promedio en el periodo: 2017,2018,2019", x="Departamento",title="Artículos tipo A por departamento académico.")+
+  labs(y="Artículos", subtitle="() Promedio por año por investigador en el periodo: 2017,2018,2019 ", x="Departamento",title="Artículos tipo A por departamento académico.")+
   theme_light()+
-  annotate("text", x="DEUMA", y=5, label="3")+
-  annotate("text", x="DEP", y=5, label="3")+
-  annotate("text", x="DEC", y=5, label="1")+
-  annotate("text", x="DEAP", y=5, label="0.45")+
-  annotate("text", x="DES", y=5, label="1")+
-  annotate("text", x="DEE", y=5, label="2")+
+  annotate("text", x="DEUMA", y=5, label="(3)")+
+  annotate("text", x="DEP", y=5, label="(3)")+
+  annotate("text", x="DEC", y=5, label="(1)")+
+  annotate("text", x="DEAP", y=5, label="(0.45)")+
+  annotate("text", x="DES", y=5, label="(1)")+
+  annotate("text", x="DEE", y=5, label="(2)")+
   theme(legend.position='none')
 
   
@@ -203,22 +201,19 @@ aaa<-a%>%group_by(Departamento)%>%
   summarize(n())
 
 
+amayor1<-filter(A,A>1)
+auno<-filter(A,A==1)
+
 Aplt<-ggplot(A,aes(fct_reorder(Nombre,A),A, fill=Departamento))+
 geom_col()+ 
-scale_fill_brewer(palette="Set2")+ 
-  coord_flip()+
+coord_flip()+
   labs(y="Artículos", subtitle="Histórico SIEVA 2017,2018,2019", x="Nombre del investigador",title="Publicaciones tipo A por investigador")+
-  theme_light()
+  theme_light()+
+  scale_fill_brewer(palette="Set2")
+ggplotly(Aplt)
 
 ggsave("A-investigador.jpg", width = 25, height = 17, units = "cm",dpi=300)
   
-ggplotly(Aplt)
-
-NOA<-select(tres,Nombre, date,Departamento, Artículos_A)%>%
-  filter(Artículos_A==0)%>%
-  group_by(Nombre)%>%
-  summarize(no=n())%>%
-  filter(no==3)
 
 
 ```
