@@ -26,6 +26,8 @@ library(tidyverse)
 library(ggplot2)
 library(scales)
 library(plotly)
+library(ggpubr)
+library(gridExtra)
 
 ```
 
@@ -36,8 +38,6 @@ library(plotly)
 
 
 La producción de libros es  fundamental en un centro de investigación, no obstante estos son proyectos de largo plazo y expresiones de la trayectoria académica que reflejan un cierto grado de consolidación y liderazgo en un tema. 
-
-Generalmente la inversión de tiempo necesaria para generar un libro es mayor que por ejemplo un artículo tipo A.  
 
 
 ```{r, echo=FALSE,warning=FALSE,message=FALSE}
@@ -99,20 +99,7 @@ l2
 ggsave("libros3.jpg", width = 25, height = 17, units = "cm",dpi=300)
 ```
 
-Es un tipo de investigación que es más común en **DEC** y **DEAP**.
-
-No obstante la producción de libros es ínfima si comparamos con la producción de articulos tipo A, un producto que es valorado con la misma ponderación en el actual instrumento de evalaución.
-
-Este rasgo  se percibe como **área de oportunidad**
-
-La inversión de tiempo necesaria para generar un libro de autor en una editorial de reconocido prestigio puede ser considerablemente superior   que por ejemplo  la publicación de un  artículo tipo A.
-
-Importante reflexionar si para El Colef es importante incentivar su producción. 
-
-En caso afirmativo acciones concretas puden implementarse como  revalorar este producto en el esquema de evaluación.
-
-
-
+Producción de libros un rubro que se percibe como **área de oportunidad**.
 
 #### 2. Calidad vs. Cantidad de producción
 
@@ -204,17 +191,49 @@ aaa<-a%>%group_by(Departamento)%>%
 amayor1<-filter(A,A>1)
 auno<-filter(A,A==1)
 
-Aplt<-ggplot(A,aes(fct_reorder(Nombre,A),A, fill=Departamento))+
+p1<-ggplot(amayor1,aes(fct_reorder(Nombre,A),A, fill=Departamento))+
+geom_col()+ 
+coord_flip()+
+  labs(y="Artículos", subtitle="Histórico SIEVA 2017,2018,2019", x="Nombre del investigador",title="Publicaciones tipo A por investigador")+
+  theme_light()+
+  scale_fill_manual(values=c("#fc8d62", "#8da0cb","#e78ac3", "#a6d854",  "#ffd92f", "#66c2a5"))
+
+
+p2alt<-ggplot(auno,aes(fct_reorder(Nombre,A),A, fill=Departamento))+
 geom_col()+ 
 coord_flip()+
   labs(y="Artículos", subtitle="Histórico SIEVA 2017,2018,2019", x="Nombre del investigador",title="Publicaciones tipo A por investigador")+
   theme_light()+
   scale_fill_brewer(palette="Set2")
-ggplotly(Aplt)
+
+
 
 ggsave("A-investigador.jpg", width = 25, height = 17, units = "cm",dpi=300)
-  
 
+
+p1alt <- ggbarplot(amayor1, x = "Nombre", y = "A", orientation = "horiz",
+          fill = "Departamento",               
+          color = "white",
+          palette = "Set2",            
+          sort.val = "desc",           
+          sort.by.groups = TRUE)+
+  font("y.text", size = 5)  
+
+p2 <- ggbarplot(auno, x = "Nombre", y = "A", orientation = "horiz",
+          fill = "Departamento",               
+          color = "white",
+          palette = "Set2",            
+          sort.val = "desc",           
+          sort.by.groups = TRUE)+
+  font("y.text", size = 5)  +
+  scale_y_discrete(limits=c(1))+
+  theme(legend.position = "none")+
+   labs(y="Artículos")
+
+
+
+p1
+p2
 
 ```
 
@@ -272,7 +291,15 @@ bp<-ggplot(inve, aes(fct_reorder(Departamento,bmed), bmed, fill=Departamento))+
   coord_flip()+
   labs(y="Publicaciones", subtitle="Promedio por investigador 2017,2018,2019", x="Departamento",title="Artículos tipo B,C y capítulos de libro")+
   theme_light()+
-  theme(legend.position='none')
+  theme(legend.position='none')+
+  annotate("text", x="DEUMA", y=2, label="(3.19)")+
+  annotate("text", x="DEP", y=2, label="(2.51)")+
+  annotate("text", x="DEC", y=2, label="(2.81)")+
+  annotate("text", x="DEAP", y=2, label="(4.87)")+
+  annotate("text", x="DES", y=2, label="(4.76)")+
+  annotate("text", x="DEE", y=2, label="(4.61)")+
+
+
 
 ggsave("b_c_caps3.jpg", width = 25, height = 17, units = "cm",dpi=300)
 
@@ -280,9 +307,6 @@ bp
 
 ```
 
-
-  
-DEAP y DES los líderes en este tipo de productos.
 
 #### 3.	Producción en las Sedes.^[
 *Nota:* dado que las sedes con más investigadores generan un volumen global mayor de producción, un indicador de desempeño que controla por el tamaño de cada sede es la producción per cápita por sede. Este indicador se calcula con la Suma del puntaje por sede entre el número de investigadores de la sede en cuestión. Este indicador permite contrastar el desempeño real en cada sede.]
@@ -316,7 +340,7 @@ ggplot(pts,aes(Sede,PtsPerInvm3, fill=Sede))+
 ggsave("pts_sede3.jpg", width = 25, height = 17, units = "cm",dpi=300)
 ```
 
-La producción promedio por investigador en la Sede Nogales duplica la producción de Tijuana equivale  a la producción conjnta de las sedes Juárez y Monterrey  y  representa 5 veces la producción de sedes como Mexicali. 
+La producción promedio por investigador en la Sede Nogales duplica la producción de Tijuana equivale  a la producción conjunta de las sedes Juárez y Monterrey  y  representa 5 veces la producción de sedes como Mexicali. 
 
 ##### 4. Compromiso en docencia,  una área de oportunidad.
 
@@ -342,7 +366,7 @@ theme(legend.position='none')+
 ggsave("boxplot.jpg", width = 25, height = 17, units = "cm",dpi=300)
 ```
 
-La distribución en horas de docencia actual únicametne refleja el diseño instituional en el que tenemos una sede principal: Tijuana donde se concentran la gran mayoria de los programas docentes  y otras sedes que en su mayoria no cuentan con programas docentes.
+La distribución en horas de docencia actual únicametne refleja el diseño institucional en el que tenemos una sede principal: Tijuana donde se concentran la gran mayoria de los programas docentes  y otras sedes que en su mayoria no cuentan con programas docentes.
 
 Este diseño condiciona el perfil de activiades docentes de los investigadores entre las sedes.
 

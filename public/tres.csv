@@ -1,267 +1,267 @@
-"","Nombre","Artículos_A","Artículos_B","Artículos_C","cap_Aut","cap_Coaut.","L_Autor","L_Coaut.","pts_prod","Hrs_cls","cumplio","date","Departamento","Sexo","Sede"
-"1","Arzaluz Solano, María del Socorro",0,0,1,2,3,0,0,5.25,143,"Si","2017","DEAP","Mujer","Monterrey"
-"2","Espinoza Valle, Víctor Alejandro",0,0,8,3,1,1,0,15.75,93,"Si","2017","DEAP","Hombre","Tijuana"
-"3","García Quiroz, Blanca Cecilia",0,1,0,2,0,0,0,3.8,133,"Si","2017","DEAP","Mujer","Monterrey"
-"4","Hernández Hernández, Alberto",0,0,1,1,1,0,1,5.75,172,"Si","2017","DEAP","Hombre","Tijuana"
-"5","López León, María Artemisa",0,0,0,3,1,0,0,3.75,32,"Si","2017","DEAP","Mujer","Matamoros"
-"6","Monsiváis Carrillo, Carlos Alejandro",0,2,0,4,1,0,0,8.35,85,"Si","2017","DEAP","Hombre","Tijuana"
-"7","Ramos García, José María",1,3,0,3,5,1,0,20.15,79,"Si","2017","DEAP","Mujer","Tijuana"
-"8","Rubio Campos, Jesús",0,2,1,2,2,0,0,8.1,55,"Si","2017","DEAP","Hombre","Monterrey"
-"9","Sánchez Munguía, Vicente",0,0,0,5,0,0,0,5,62,"Si","2017","DEAP","Hombre","Tijuana"
-"10","Sarabia Ríos, Cecilia",0,0,1,2,0,0,0,3,88,"Si","2017","DEAP","Mujer","Monterrey"
-"11","Zavala Álvarez José",0,0,0,0,0,0,0,0,0,"No","2017","DEAP","Hombre","Mexicali"
-"12","Alonso Meneses, Guillermo",0,0,1,2,0,0,0,3,40,"Si","2017","DEC","Hombre","Tijuana"
-"13","Contreras Delgado, Camilo",0,1,0,1,1,0,0,3.55,92.5,"Si","2017","DEC","Hombre","Monterrey"
-"14","Cruz Sierra, Salvador",0,0,0,5,0,0,0,5,165,"Si","2017","DEC","Hombre","Juárez"
-"15","Fernández De Juan, Teresa",1,0,4,0,0,0,0,8,35,"Si","2017","DEC","Mujer","Tijuana"
-"16","Monárrez Fragoso, Julia Estela",0,1,0,1,0,0,0,2.8,59,"Si","2017","DEC","Mujer","Juárez"
-"17","Nieto Camacho, Ana Lilia",0,0,1,1,0,0,0,2,52.5,"Si","2017","DEC","Mujer","Tijuana"
-"18","Olmos Aguilera, Miguel",0,0,0,7,0,0,0,7,45,"Si","2017","DEC","Hombre","Tijuana"
-"19","París Pombo, María Dolores",1,1,1,0,3,0,0,9.05,40,"Si","2017","DEC","Mujer","Tijuana"
-"20","Ruiz Marrujo, Olivia Teresa",0,1,0,2,0,0,0,3.8,75,"Si","2017","DEC","Mujer","Tijuana"
-"21","Taylor Hansen, Lawrance Douglas",1,0,1,1,0,0,0,6,42.5,"Si","2017","DEC","Hombre","Tijuana"
-"22","Valencia Triana, Margarita",1,0,0,5,0,1,0,13,117,"Si","2017","DEC","Mujer","Tijuana"
-"23","Velasco Ortiz, Matilde Laura",2,1,0,1,0,0,0,10.8,120,"Si","2017","DEC","Mujer","Tijuana"
-"24","Zárate Ruiz, Arturo",0,0,0,3,0,0,0,3,55,"Si","2017","DEC","Hombre","Matamoros"
-"25","Brugués Rodríguez, Alejandro",1,0,2,0,1,0,0,6.75,89,"Si","2017","DEE","Hombre","Juárez"
-"26","Calderón Villarreal, Cuauhtémoc",1,4,3,0,2,0,0,15.7,70,"Si","2017","DEE","Hombre","Tijuana"
-"27","Corrales Corrales, Salvador",0,3,1,0,1,0,0,7.15,45,"Si","2017","DEE","Hombre","Monterrey"
-"28","Díaz Bautista, Alejandro",0,0,2,0,0,0,0,2,75,"Si","2017","DEE","Hombre","Tijuana"
-"29","Díaz González, Eliseo",1,1,0,3,2,0,1,13.3,112.5,"Si","2017","DEE","Hombre","Tijuana"
-"30","Fuentes Flores, Noé Arón",0,1,1,0,0,0,0,2.8,142.5,"Si","2017","DEE","Hombre","Tijuana"
-"31","González Andrade, Salvador",0,1,1,0,3,0,0,5.05,40,"Si","2017","DEE","Hombre","Tijuana"
-"32","Hernández Bielma, Leticia",0,1,0,0,1,0,0,2.55,85,"Si","2017","DEE","Mujer","Tijuana"
-"33","Mendoza Cota, Jorge Eduardo",0,5,3,3,0,0,0,15,210.5,"Si","2017","DEE","Hombre","Tijuana"
-"34","Rivera Castañeda, Patricia",0,2,0,0,0,0,0,3.6,70,"Si","2017","DEE","Mujer","Tijuana"
-"35","Vásquez Galán, Belem Iliana",0,2,1,0,0,0,0,4.6,100,"Si","2017","DEE","Mujer","Monterrey"
-"36","Acosta Díaz, Félix",1,0,1,0,4,0,0,8,83,"Si","2017","DEP","Hombre","Tijuana"
-"37","Bojórquez Chapela, Ietza Rocio",6,1,0,0,0,0,0,25.8,142.5,"Si","2017","DEP","Mujer","Tijuana"
-"38","Calva Sánchez, Luis Enrique",1,0,1,1,0,0,0,6,45,"Si","2017","DEP","Hombre","Monterrey"
-"39","Coubès, Marie-Laure",0,1,0,0,1,0,0,2.55,113,"Si","2017","DEP","Mujer","Tijuana"
-"40","Cruz Piñeiro, Rodolfo",0,1,0,0,7,0,0,7.05,177.5,"Si","2017","DEP","Hombre","Tijuana"
-"41","Cueva Luna, Teresa Elizabeth",1,0,0,2,0,0,0,6,77.5,"Si","2017","DEP","Mujer","Matamoros"
-"42","González Galbán, Humberto",1,1,0,0,0,0,0,5.8,20,"Si","2017","DEP","Hombre","Tijuana"
-"43","González Ramírez, Raúl Sergio",1,0,0,0,0,0,0,4,37.5,"Si","2017","DEP","Hombre","Tijuana"
-"44","Ham Chande, Roberto",1,1,0,0,1,0,0,6.55,0,"Si","2017","DEP","Hombre","Tijuana"
-"45","Ley Cervantes, Melissa",2,0,0,0,0,0,0,8,20,"Si","2017","DEP","Mujer","Monterrey"
-"46","López Estrada, Silvia",1,0,0,3,1,0,0,7.75,112.5,"Si","2017","DEP","Mujer","Tijuana"
-"47","Palma Cabrera, Yolanda",0,0,1,1,0,0,0,2,70,"Si","2017","DEP","Mujer","Tijuana"
-"48","Peña Muñoz, Jesús Javier",1,0,2,0,0,0,0,6,46,"Si","2017","DEP","Hombre","Juárez"
-"49","Schwartz Post, Norah Anita",1,0,0,0,0,0,0,4,0,"Si","2017","DEP","Mujer","Tijuana"
-"50","Uribe Salas, Felipe Javier",3,1,0,1,0,0,0,14.8,65,"Si","2017","DEP","Hombre","P.Negras"
-"51","Vargas Valle, Eunice Danitza",0,6,0,1,0,0,0,11.8,167.5,"Si","2017","DEP","Mujer","Tijuana"
-"52","Vázquez Delgado, Blanca Delia",0,0,0,2,0,1,0,6,22,"Si","2017","DEP","Mujer","Monterrey"
-"53","Von Glascoe, Christine Alysse",1,0,0,0,3,0,0,6.25,0,"Si","2017","DEP","Mujer","Tijuana"
-"54","Ybañez Zepeda, Elmyra",0,1,0,0,2,0,0,3.3,52,"Si","2017","DEP","Mujer","Tijuana"
-"55","Alarcón Acosta, Rafael G.",0,1,0,2,0,0,1,6.8,167.5,"Si","2017","DES","Hombre","Tijuana"
-"56","Anguiano Téllez, María Eugenia",1,0,0,1,4,0,0,8,267,"Si","2017","DES","Mujer","Tijuana"
-"57","Barajas Escamilla, María del Rosío",0,1,1,3,2,0,0,7.3,57.5,"Si","2017","DES","Mujer","Tijuana"
-"58","Carrillo Viveros, Jorge Héctor",2,3,0,0,4,1,2,26.4,132.5,"Si","2017","DES","Hombre","Tijuana"
-"59","Gomis Hernández, Redi",1,0,0,0,1,0,0,4.75,127.5,"Si","2017","DES","Hombre","Tijuana"
-"60","Hernández Hernández, Oscar Misael",0,2,2,10,0,0,1,18.6,85,"Si","2017","DES","Hombre","Matamoros"
-"61","Hualde Alfaro, Alfredo",1,0,1,0,5,0,0,8.75,167,"Si","2017","DES","Hombre","Tijuana"
-"62","Jurado Montelongo, Mario Alberto",0,2,0,0,1,0,0,4.35,10,"Si","2017","DES","Hombre","Monterrey"
-"63","Matus Ruiz, Maximino",0,1,0,3,4,0,0,7.8,20,"Si","2017","DES","Hombre","Tijuana"
-"64","Miker Palafox, Martha",0,0,0,1,0,0,0,1,136.5,"No","2017","DES","Mujer","Tijuana"
-"65","Odgers Ortiz, Olga",0,0,0,0,0,0,2,6,132.5,"Si","2017","DES","Mujer","Tijuana"
-"66","Pérez Floriano, Lorena Raquel",0,0,0,0,1,0,0,0.75,15,"No","2017","DES","Mujer","Tijuana"
-"67","Solís Pérez, Marlene Celia",1,0,0,3,1,0,0,7.75,142.5,"Si","2017","DES","Mujer","Tijuana"
-"68","Aguilar Benítez, Ismael",1,0,0,0,1,0,0,4.75,115,"Si","2017","DEUMA","Hombre","Monterrey"
-"69","Bringas Rábago, Nora Leticia",3,1,1,0,3,0,0,17.05,37.5,"Si","2017","DEUMA","Mujer","Tijuana"
-"70","Castro Ruiz, José Luis",0,0,0,0,3,0,0,2.25,90,"Si","2017","DEUMA","Hombre","Monterrey"
-"71","Córdova Bojórquez, Gustavo",0,2,1,0,0,0,1,7.6,92,"Si","2017","DEUMA","Hombre","Juárez"
-"72","Córdova y Vázquez, Ana",0,0,1,1,0,0,0,2,65,"Si","2017","DEUMA","Mujer","Juárez"
-"73","Cortez Lara, Alfonso Andrés",0,0,0,1,1,0,0,1.75,60,"No","2017","DEUMA","Hombre","Mexicali"
-"74","Fuentes Flores, César Mario",2,1,0,0,2,0,0,11.3,181.5,"Si","2017","DEUMA","Hombre","Juárez"
-"75","García Ochoa, Rigoberto",2,1,2,1,0,0,0,12.8,90.5,"Si","2017","DEUMA","Hombre","Nogales"
-"76","González Ávila, María Eugenia",2,0,1,2,2,0,0,12.5,65,"Si","2017","DEUMA","Mujer","Monterrey"
-"77","Manzanares Rivera, José Luis",5,4,1,1,0,0,0,29.2,100,"Si","2017","DEUMA","Hombre","Nogales"
-"78","Muñoz Meléndez, Gabriela",0,1,1,1,3,0,0,6.05,190,"Si","2017","DEUMA","Mujer","Tijuana"
-"79","Ojeda Revah, Lina",0,1,0,0,1,0,0,2.55,80.5,"Si","2017","DEUMA","Mujer","Tijuana"
-"80","Oliveras González, Xavier",1,3,0,1,3,0,0,12.65,40,"Si","2017","DEUMA","Hombre","Matamoros"
-"81","Peña Medina, Sergio",0,2,1,2,1,1,0,11.35,95,"Si","2017","DEUMA","Hombre","Juárez"
-"82","Pombo López, Oscar Alberto",0,0,0,1,0,0,0,1,45,"No","2017","DEUMA","Hombre","Tijuana"
-"83","Riemann González, Hugo",1,0,0,2,1,0,0,6.75,0,"Si","2017","DEUMA","Hombre","Tijuana"
-"84","Sánchez Rodríguez, Roberto Alejandro",0,1,0,1,1,0,0,3.55,202.5,"Si","2017","DEUMA","Hombre","Tijuana"
-"85","Santes Álvarez, Ricardo Valentín",0,0,2,2,0,0,0,4,30,"Si","2017","DEUMA","Hombre","Tijuana"
-"86","Toudert Djamel, Eddine",3,2,0,1,1,0,0,17.35,110,"Si","2017","DEUMA","Hombre","Tijuana"
-"87","Vázquez León, Carlos Israel",0,0,0,1,0,0,0,1,120,"No","2017","DEUMA","Hombre","Tijuana"
-"88","Arzaluz Solano, María del Socorro",0,0,1,1,6,0,0,6.5,145.5,"Si","2018","DEAP","Mujer","Monterrey"
-"89","García Quiroz, Blanca Cecilia",0,0,0,3,0,0,0,3,58,"Si","2018","DEAP","Mujer","Monterrey"
-"90","López León, María Artemisa",0,0,1,5,0,0,0,6,40,"Si","2018","DEAP","Mujer","Matamoros"
-"91","Monsiváis Carrillo, Carlos Alejandro",1,1,0,5,0,1,0,14.8,185,"Si","2018","DEAP","Hombre","Tijuana"
-"92","Rubio Campos, Jesús",0,4,0,2,1,0,0,9.95,55,"Si","2018","DEAP","Hombre","Monterrey"
-"93","Sánchez Munguía, Vicente",0,0,0,4,0,0,0,4,52,"Si","2018","DEAP","Hombre","Tijuana"
-"94","Sarabia Ríos, Cecilia",0,0,1,2,0,1,0,7,95,"Si","2018","DEAP","Mujer","Monterrey"
-"95","Alonso Meneses, Guillermo",0,0,2,0,0,0,0,2,107.5,"Si","2018","DEC","Hombre","Tijuana"
-"96","Contreras Delgado, Camilo",0,2,0,0,1,0,1,5.85,92.5,"Si","2018","DEC","Hombre","Monterrey"
-"97","Cruz Sierra, Salvador",0,0,0,4,0,0,0,4,170,"Si","2018","DEC","Hombre","Juárez"
-"98","Fernández De Juan, Teresa",1,0,3,1,0,0,0,8,20,"Si","2018","DEC","Mujer","Tijuana"
-"99","Maier-Hirsch Elizabeth Jean",0,2,0,0,0,0,0,3.6,110,"Si","2018","DEC","Mujer","Tijuana"
-"100","Monárrez Fragoso, Julia Estela",0,1,0,3,0,0,0,4.8,35,"Si","2018","DEC","Mujer","Juárez"
-"101","Nieto Camacho, Ana Lilia",0,0,0,0,0,0,0,0,45,"No","2018","DEC","Mujer","Tijuana"
-"102","Olmos Aguilera, Miguel",0,1,0,3,1,0,0,5.55,45,"Si","2018","DEC","Hombre","Tijuana"
-"103","París Pombo, María Dolores",1,0,1,0,1,1,0,9.75,100,"Si","2018","DEC","Mujer","Tijuana"
-"104","Ruiz Marrujo, Olivia Teresa",0,1,0,2,0,0,0,3.8,117.5,"Si","2018","DEC","Mujer","Tijuana"
-"105","Taylor Hansen, Lawrance Douglas",1,0,1,0,0,0,0,5,42.5,"Si","2018","DEC","Hombre","Tijuana"
-"106","Valencia Triana, Margarita",1,0,1,1,0,1,0,10,87,"Si","2018","DEC","Mujer","Tijuana"
-"107","Valenzuela Arce José Manuel",0,0,0,3,0,0,0,3,320,"Si","2018","DEC","Hombre","Tijuana"
-"108","Velasco Ortiz, Matilde Laura",1,1,0,2,0,0,1,10.8,175,"Si","2018","DEC","Mujer","Tijuana"
-"109","Zárate Ruiz, Arturo",0,0,2,2,0,0,0,4,19,"Si","2018","DEC","Hombre","Matamoros"
-"110","Bruce, Benjamín Patrick",0,0,1,0,0,0,0,1,30,"No","2018","DEC","Hombre","Monterrey"
-"111","Hernández López, Ana Gabriela",1,0,0,0,0,0,0,4,0,"Si","2018","DEC","Mujer","Tijuana"
-"112","Brugués Rodríguez, Alejandro",1,0,1,0,1,0,0,5.75,97.5,"Si","2018","DEE","Hombre","Juárez"
-"113","Calderón Villarreal, Cuauhtémoc",3,6,2,0,3,0,0,27.05,70,"Si","2018","DEE","Hombre","Tijuana"
-"114","Corrales Corrales, Salvador",0,3,1,2,1,0,0,9.15,45,"Si","2018","DEE","Hombre","Monterrey"
-"115","Díaz Bautista, Alejandro",0,0,1,0,1,0,0,1.75,97.5,"No","2018","DEE","Hombre","Tijuana"
-"116","Díaz González, Eliseo",1,0,1,3,2,2,0,17.5,100,"Si","2018","DEE","Hombre","Tijuana"
-"117","Fuentes Flores, Noé Arón",0,1,1,0,5,0,0,6.55,130,"Si","2018","DEE","Hombre","Tijuana"
-"118","González Andrade, Salvador",0,1,1,1,2,0,0,5.3,62.5,"Si","2018","DEE","Hombre","Tijuana"
-"119","Hernández Bielma, Leticia",0,1,1,0,1,0,0,3.55,62.5,"Si","2018","DEE","Mujer","Tijuana"
-"120","Mendoza Cota, Jorge Eduardo",0,3,2,4,1,0,0,12.15,260,"Si","2018","DEE","Hombre","Tijuana"
-"121","Rivera Castañeda, Patricia",0,1,0,0,1,0,0,2.55,85,"Si","2018","DEE","Mujer","Tijuana"
-"122","Vásquez Galán, Belem Iliana",1,2,1,0,0,0,0,8.6,75,"Si","2018","DEE","Mujer","Monterrey"
-"123","Bojórquez Chapela, Ietza Rocio",7,2,0,0,0,0,0,31.6,240,"Si","2018","DEP","Mujer","Tijuana"
-"124","Coubès, Marie-Laure",0,1,0,0,1,0,0,2.55,135.5,"Si","2018","DEP","Mujer","Tijuana"
-"125","Cueva Luna, Teresa Elizabeth",1,0,0,1,1,0,0,5.75,97.5,"Si","2018","DEP","Mujer","Matamoros"
-"126","González Galbán, Humberto",1,2,3,0,0,0,0,10.6,20,"Si","2018","DEP","Hombre","Tijuana"
-"127","Ham Chande, Roberto",2,1,0,0,1,0,0,10.8,15,"Si","2018","DEP","Hombre","Tijuana"
-"128","López Estrada, Silvia",0,1,0,2,0,0,0,3.8,145,"Si","2018","DEP","Mujer","Tijuana"
-"129","Mejía Arango Silvia Elena",2,1,0,0,3,0,0,12.05,125,"Si","2018","DEP","Mujer","Tijuana"
-"130","Palma Cabrera, Yolanda",0,0,1,0,0,0,0,1,40,"No","2018","DEP","Mujer","Tijuana"
-"131","Uribe Salas, Felipe Javier",2,0,2,1,0,0,0,11,25,"Si","2018","DEP","Hombre","P.Negras"
-"132","Vargas Valle, Eunice Danitza",1,6,0,0,0,0,0,14.8,237.5,"Si","2018","DEP","Mujer","Tijuana"
-"133","Vázquez Delgado, Blanca Delia",0,0,1,3,0,0,0,4,32.5,"Si","2018","DEP","Mujer","Monterrey"
-"134","Von Glascoe, Christine Alysse",1,1,0,0,2,0,0,7.3,0,"Si","2018","DEP","Mujer","Tijuana"
-"135","Ybañez Zepeda, Elmyra",0,2,0,0,1,0,0,4.35,112,"Si","2018","DEP","Mujer","Tijuana"
-"136","Calva Sánchez, Luis Enrique",0,0,0,1,2,0,0,2.5,153,"Si","2018","DEP","Hombre","Monterrey"
-"137","Ley Cervantes, Melissa",0,0,0,0,0,0,0,0,0,"No","2018","DEP","Mujer","Monterrey"
-"138","Peña Muñoz, Jesús Javier",0,2,0,0,0,0,0,3.6,0,"Si","2018","DEP","Hombre","Juárez"
-"139","Portillo Tellez, María del Carmen",1,0,0,0,0,0,0,4,5,"Si","2018","DEP","Mujer","P.Negras"
-"140","Rosales Martínez, Yetzi",0,2,0,0,0,0,0,3.6,0,"Si","2018","DEP","Mujer","Monterrey"
-"141","Alarcón Acosta, Rafael G.",0,2,0,1,2,0,1,9.1,217.5,"Si","2018","DES","Hombre","Tijuana"
-"142","Almaraz Alvarado Araceli",0,0,0,3,0,0,0,3,80,"Si","2018","DES","Mujer","Tijuana"
-"143","Anguiano Téllez, María Eugenia",1,0,0,0,3,0,0,6.25,253,"Si","2018","DES","Mujer","Tijuana"
-"144","Carrillo Viveros, Jorge Héctor",1,2,0,1,9,0,3,24.35,97.5,"Si","2018","DES","Hombre","Tijuana"
-"145","Gomis Hernández, Redi",1,1,0,0,1,0,0,6.55,109,"Si","2018","DES","Hombre","Tijuana"
-"146","Hernández Hernández, Oscar Misael",1,1,2,7,0,0,0,14.8,70,"Si","2018","DES","Hombre","Matamoros"
-"147","Jurado Montelongo, Mario Alberto",0,1,0,0,1,0,0,2.55,10,"No","2018","DES","Hombre","Monterrey"
-"148","Miker Palafox, Martha",0,0,0,0,3,0,0,2.25,112.5,"Si","2018","DES","Mujer","Tijuana"
-"149","Odgers Ortiz, Olga",1,1,0,0,0,0,2,11.8,175,"Si","2018","DES","Mujer","Tijuana"
-"150","Pérez Floriano, Lorena Raquel",0,0,1,0,2,0,0,2.5,35,"No","2018","DES","Mujer","Tijuana"
-"151","Solís Pérez, Marlene Celia",0,1,2,1,3,0,0,7.05,122.5,"Si","2018","DES","Mujer","Tijuana"
-"152","Matus Ruiz, Maximino",0,2,0,1,5,0,0,8.35,102,"Si","2018","DES","Hombre","Tijuana"
-"153","Aguilar Benítez, Ismael",1,1,0,0,1,0,0,6.55,145,"Si","2018","DEUMA","Hombre","Monterrey"
-"154","Bringas Rábago Nora Leticia",2,1,0,1,2,0,0,12.3,119.5,"Si","2018","DEUMA","Mujer","Tijuana"
-"155","Castro Ruiz, José Luis",0,1,0,0,3,0,0,4.05,90,"Si","2018","DEUMA","Hombre","Monterrey"
-"156","Córdova Bojórquez, Gustavo",0,3,0,1,0,0,1,7.9,89,"Si","2018","DEUMA","Hombre","Juárez"
-"157","Córdova y Vázquez, Ana",1,0,1,0,1,0,0,5.75,20,"Si","2018","DEUMA","Mujer","Juárez"
-"158","Cortez Lara, Alfonso Andrés",0,0,0,1,1,0,0,1.75,60,"No","2018","DEUMA","Hombre","Mexicali"
-"159","De la Parra Rentería Carlos Alfonso",1,0,0,0,2,0,0,5.5,0,"Si","2018","DEUMA","Hombre","Tijuana"
-"160","Fuentes Flores, César Mario",1,1,0,0,2,0,1,10.3,120,"Si","2018","DEUMA","Hombre","Juárez"
-"161","García Ochoa, Rigoberto",2,0,0,2,0,0,0,10,157.5,"Si","2018","DEUMA","Hombre","Nogales"
-"162","González Ávila, María Eugenia",2,0,0,2,2,0,0,11.5,65,"Si","2018","DEUMA","Mujer","Monterrey"
-"163","Manzanares Rivera, José Luis",6,3,0,1,0,0,0,30.4,65,"Si","2018","DEUMA","Hombre","Nogales"
-"164","Muñoz Meléndez, Gabriela",0,0,0,2,1,0,0,2.75,215,"Si","2018","DEUMA","Mujer","Tijuana"
-"165","Oliveras González, Xavier",0,1,2,0,3,0,0,6.05,62.5,"Si","2018","DEUMA","Hombre","Matamoros"
-"166","Peña Medina, Sergio",0,1,0,1,0,0,1,5.8,67.5,"Si","2018","DEUMA","Hombre","Juárez"
-"167","Pombo López, Oscar Alberto",0,0,0,0,0,0,0,0,45,"No","2018","DEUMA","Hombre","Tijuana"
-"168","Riemann González, Hugo",1,0,0,0,0,0,0,4,0,"Si","2018","DEUMA","Hombre","Tijuana"
-"169","Rodríguez Esteves Juan Manuel",0,1,1,0,0,0,0,2.8,115,"Si","2018","DEUMA","Hombre","Tijuana"
-"170","Sánchez Rodríguez, Roberto Alejandro",0,1,0,0,0,0,0,1.8,197.5,"No","2018","DEUMA","Hombre","Tijuana"
-"171","Santes Álvarez, Ricardo Valentín",0,0,2,1,0,0,0,3,97.5,"Si","2018","DEUMA","Hombre","Tijuana"
-"172","Toudert Djamel, Eddine",2,3,0,1,0,0,0,14.4,120,"Si","2018","DEUMA","Hombre","Tijuana"
-"173","Vázquez León, Carlos Israel",0,0,0,0,1,0,0,0.75,30,"No","2018","DEUMA","Hombre","Tijuana"
-"174","Arzaluz Solano, María del Socorro",0,0,0,0,6,0,0,4.5,75.5,"Si","2019","DEAP","Mujer","Monterrey"
-"175","García Quiroz, Blanca Cecilia",0,0,0,4,1,0,0,4.75,83,"Si","2019","DEAP","Mujer","Monterrey"
-"176","López León, María Artemisa",0,0,1,4,0,0,0,5,52.5,"Si","2019","DEAP","Mujer","Matamoros"
-"177","Monsiváis Carrillo, Carlos Alejandro",1,1,0,1,0,1,0,10.8,190,"Si","2019","DEAP","Hombre","Tijuana"
-"178","Rubio Campos, Jesús",1,4,0,1,0,0,0,12.2,65,"Si","2019","DEAP","Hombre","Monterrey"
-"179","Sánchez Munguía, Vicente",0,1,0,2,0,0,0,3.8,20,"Si","2019","DEAP","Hombre","Tijuana"
-"180","Sarabia Ríos, Cecilia",0,0,2,1,0,1,0,7,72,"Si","2019","DEAP","Mujer","Monterrey"
-"181","Vera López, Juana Isabel",0,2,0,3,0,0,0,6.6,55,"Si","2019","DEAP","Mujer","P.Negras"
-"182","Zavala Álvarez José",0,0,0,0,0,0,0,0,0,"No","2019","DEAP","Hombre","Mexicali"
-"183","Alarcón Medina, Rafael",2,0,1,2,0,0,0,11,82.5,"Si","2019","DEC","Hombre","Tijuana"
-"184","Cruz Sierra, Salvador",0,0,0,4,0,0,0,4,125,"Si","2019","DEC","Hombre","Juárez"
-"185","Escala Rabadán , Luis",1,0,1,0,0,0,0,5,155,"Si","2019","DEC","Hombre","Tijuana"
-"186","Fernández De Juan, Teresa",1,0,3,1,0,0,0,8,0,"Si","2019","DEC","Mujer","Tijuana"
-"187","Maier-Hirsch Elizabeth Jean",0,1,0,0,0,0,0,1.8,45,"No","2019","DEC","Mujer","Tijuana"
-"188","Monárrez Fragoso, Julia Estela",0,0,2,3,0,0,0,5,167.5,"Si","2019","DEC","Mujer","Juárez"
-"189","Nieto Camacho, Ana Lilia",0,0,0,0,0,0,0,0,75,"No","2019","DEC","Mujer","Tijuana"
-"190","Olmos Aguilera, Miguel",0,1,0,5,1,0,0,7.55,72.5,"Si","2019","DEC","Hombre","Tijuana"
-"191","Ruiz Marrujo, Olivia Teresa",0,0,0,2,0,0,0,2,92.5,"Si","2019","DEC","Mujer","Tijuana"
-"192","Taylor Hansen, Lawrance Douglas",1,0,0,0,0,0,0,4,22.5,"Si","2019","DEC","Hombre","Tijuana"
-"193","Valencia Triana, Margarita",1,1,0,2,0,0,0,7.8,200,"Si","2019","DEC","Mujer","Tijuana"
-"194","Valenzuela Arce José Manuel",0,0,0,3,0,1,0,7,117.5,"Si","2019","DEC","Hombre","Tijuana"
-"195","Velasco Ortiz, Matilde Laura",0,1,0,2,0,0,1,6.8,180,"Si","2019","DEC","Mujer","Tijuana"
-"196","Zárate Ruiz, Arturo",0,0,1,4,0,0,0,5,19,"Si","2019","DEC","Hombre","Matamoros"
-"197","Bruce, Benjamín Patrick",2,0,1,0,0,1,0,13,80,"Si","2019","DEC","Hombre","Monterrey"
-"198","Díaz Carnero Emiliano Ignacio",0,0,0,0,0,0,0,0,20,"No","2019","DEC","Hombre","Juárez"
-"199","Hernández López, Ana Gabriela",0,0,0,0,0,0,0,0,142.5,"No","2019","DEC","Mujer","Tijuana"
-"200","Medina Parra Rosa Isabel",0,0,0,0,0,0,0,0,0,"No","2019","DEC","Mujer","Juárez"
-"201","Pérez Caballero Jesús",0,0,0,2,0,0,0,2,0,"No","2019","DEC","Hombre","Matamoros"
-"202","Sumano Rodríguez José Andrés",0,0,1,2,0,1,0,7,23,"Si","2019","DEC","Hombre","Matamoros"
-"203","Brugués Rodríguez, Alejandro",0,2,0,0,3,0,0,5.85,105,"Si","2019","DEE","Hombre","Juárez"
-"204","Calderón Villarreal, Cuauhtémoc",4,4,0,0,3,0,0,25.45,80,"Si","2019","DEE","Hombre","Tijuana"
-"205","Corrales Corrales, Salvador",0,0,0,2,0,0,0,2,45,"Si","2019","DEE","Hombre","Monterrey"
-"206","Díaz Bautista, Alejandro",0,0,0,0,1,0,0,0.75,132.5,"No","2019","DEE","Hombre","Tijuana"
-"207","Díaz González, Eliseo",1,0,1,2,0,1,0,11,115,"Si","2019","DEE","Hombre","Tijuana"
-"208","Fuentes Flores, Noé Arón",0,2,0,0,6,0,0,8.1,75,"Si","2019","DEE","Hombre","Tijuana"
-"209","González Andrade, Salvador",0,1,0,1,0,0,0,2.8,72.5,"Si","2019","DEE","Hombre","Tijuana"
-"210","Hernández Bielma, Leticia",1,1,0,0,0,0,0,5.8,72.5,"Si","2019","DEE","Mujer","Tijuana"
-"211","Peláez Herreros Óscar",1,1,3,1,1,0,0,10.55,165,"Si","2019","DEE","Hombre","Tijuana"
-"212","Rivera Castañeda, Patricia",0,4,0,0,3,0,0,9.45,105,"Si","2019","DEE","Mujer","Tijuana"
-"213","Vásquez Galán, Belem Iliana",1,0,1,1,0,0,0,6,85,"Si","2019","DEE","Mujer","Monterrey"
-"214","Acosta Díaz, Félix",0,0,0,0,0,0,0,0,83,"No","2019","DEP","Hombre","Tijuana"
-"215","Bojórquez Chapela, Ietza Rocio",10,2,0,0,0,0,0,43.6,270,"Si","2019","DEP","Mujer","Tijuana"
-"216","Coubès, Marie-Laure",0,0,0,0,1,0,0,0.75,98,"No","2019","DEP","Mujer","Tijuana"
-"217","Cueva Luna, Teresa Elizabeth",0,0,2,1,2,0,0,4.5,57.5,"Si","2019","DEP","Mujer","Matamoros"
-"218","González Galbán, Humberto",1,2,2,0,0,0,0,9.6,0,"Si","2019","DEP","Hombre","Tijuana"
-"219","González Ramírez, Raúl Sergio",0,1,0,0,2,0,0,3.3,0,"Si","2019","DEP","Hombre","Tijuana"
-"220","Ham Chande, Roberto",2,0,0,0,1,0,0,8.75,35,"Si","2019","DEP","Hombre","Tijuana"
-"221","López Estrada, Silvia",0,1,0,1,0,0,0,2.8,97.5,"Si","2019","DEP","Mujer","Tijuana"
-"222","Mejía Arango Silvia Elena",1,0,0,0,2,0,0,5.5,120,"Si","2019","DEP","Mujer","Tijuana"
-"223","Palma Cabrera, Yolanda",0,0,0,0,3,1,0,6.25,25,"Si","2019","DEP","Mujer","Tijuana"
-"224","Rangel Gómez María Gudelia",1,0,0,0,0,0,0,4,0,"Si","2019","DEP","Mujer","Tijuana"
-"225","Schwartz Post, Norah Anita",1,0,0,0,1,0,0,4.75,0,"Si","2019","DEP","Mujer","Tijuana"
-"226","Uribe Salas, Felipe Javier",1,0,2,0,1,0,0,6.75,5,"Si","2019","DEP","Hombre","P.Negras"
-"227","Vargas Valle, Eunice Danitza",3,3,0,0,1,0,0,18.15,190,"Si","2019","DEP","Mujer","Tijuana"
-"228","Vázquez Delgado, Blanca Delia",1,0,0,0,1,0,0,4.75,54.5,"Si","2019","DEP","Mujer","Monterrey"
-"229","Von Glascoe, Christine Alysse",1,1,1,0,3,0,0,9.05,0,"Si","2019","DEP","Mujer","Tijuana"
-"230","Ybañez Zepeda, Elmyra",0,1,0,0,1,0,0,2.55,70,"Si","2019","DEP","Mujer","Tijuana"
-"231","Calva Sánchez, Luis Enrique",0,1,0,1,2,0,0,4.3,65,"Si","2019","DEP","Hombre","Monterrey"
-"232","Peña Muñoz, Jesús Javier",0,2,0,1,1,0,0,5.35,0,"Si","2019","DEP","Hombre","Juárez"
-"233","Portillo Tellez, María del Carmen",2,0,0,0,0,0,0,8,5,"Si","2019","DEP","Mujer","P.Negras"
-"234","Rosales Martínez, Yetzi",0,2,0,0,1,0,0,4.35,0,"Si","2019","DEP","Mujer","Monterrey"
-"235","Alarcón Acosta, Rafael G.",0,1,0,1,2,0,0,4.3,197.5,"Si","2019","DES","Hombre","Tijuana"
-"236","Almaraz Alvarado Araceli",0,1,0,1,1,0,1,6.55,30,"Si","2019","DES","Mujer","Tijuana"
-"237","Carrillo Viveros, Jorge Héctor",0,2,0,2,9,0,3,21.35,82.5,"Si","2019","DES","Hombre","Tijuana"
-"238","Gomis Hernández, Redi",1,1,0,0,1,0,1,9.55,124,"Si","2019","DES","Hombre","Tijuana"
-"239","Hernández Hernández, Oscar Misael",1,2,2,2,1,0,0,12.35,70,"Si","2019","DES","Hombre","Matamoros"
-"240","Hualde Alfaro, Alfredo",0,1,1,1,1,1,0,8.55,125,"Si","2019","DES","Hombre","Tijuana"
-"241","Jurado Montelongo, Mario Alberto",0,0,1,0,1,0,0,1.75,30,"No","2019","DES","Hombre","Monterrey"
-"242","Miker Palafox, Martha",0,0,1,0,3,0,0,3.25,137,"Si","2019","DES","Mujer","Tijuana"
-"243","Odgers Ortiz, Olga",2,1,0,1,1,0,0,11.55,230,"Si","2019","DES","Mujer","Tijuana"
-"244","Quintero Ramírez Cirila",0,1,0,1,1,0,0,3.55,87.5,"Si","2019","DES","Mujer","Matamoros"
-"245","Solís Pérez, Marlene Celia",0,2,4,0,3,0,0,9.85,10,"Si","2019","DES","Mujer","Tijuana"
-"246","Matus Ruiz, Maximino",0,1,0,1,1,0,0,3.55,192,"Si","2019","DES","Hombre","Tijuana"
-"247","Aguilar Benítez, Ismael",0,1,0,1,1,0,0,3.55,105,"Si","2019","DEUMA","Hombre","Monterrey"
-"248","Alegría Olazábal Tito Alejandro",1,0,0,2,0,0,0,6,105,"Si","2019","DEUMA","Hombre","Tijuana"
-"249","Bringas Rábago Nora Leticia",2,0,0,1,1,0,0,9.75,92.5,"Si","2019","DEUMA","Mujer","Tijuana"
-"250","Castro Ruiz, José Luis",0,2,0,0,3,0,0,5.85,25,"Si","2019","DEUMA","Hombre","Monterrey"
-"251","Córdova Bojórquez, Gustavo",0,4,2,2,0,0,1,12.7,70,"Si","2019","DEUMA","Hombre","Juárez"
-"252","Córdova y Vázquez, Ana",4,0,1,0,1,0,0,17.75,0,"Si","2019","DEUMA","Mujer","Juárez"
-"253","Cortez Lara, Alfonso Andrés",0,2,0,1,5,0,0,8.35,30,"Si","2019","DEUMA","Hombre","Mexicali"
-"254","De la Parra Rentería Carlos Alfonso",2,0,0,0,0,0,0,8,0,"Si","2019","DEUMA","Hombre","Tijuana"
-"255","Fuentes Flores, César Mario",0,1,0,1,1,0,1,6.55,190,"Si","2019","DEUMA","Hombre","Juárez"
-"256","García Ochoa, Rigoberto",0,2,1,1,0,0,0,5.6,105,"Si","2019","DEUMA","Hombre","Nogales"
-"257","González Ávila, María Eugenia",0,2,0,2,0,0,0,5.6,20,"Si","2019","DEUMA","Mujer","Monterrey"
-"258","Manzanares Rivera, José Luis",4,1,1,1,0,0,0,19.8,70,"Si","2019","DEUMA","Hombre","Nogales"
-"259","Oliveras González, Xavier",0,2,2,2,1,0,0,8.35,65,"Si","2019","DEUMA","Hombre","Matamoros"
-"260","Peña Medina, Sergio",0,1,0,2,0,0,1,6.8,127.5,"Si","2019","DEUMA","Hombre","Juárez"
-"261","Pombo López, Oscar Alberto",0,1,0,1,0,0,0,2.8,90,"Si","2019","DEUMA","Hombre","Tijuana"
-"262","Riemann González, Hugo",0,0,0,0,0,0,0,0,65,"No","2019","DEUMA","Hombre","Tijuana"
-"263","Rodríguez Esteves Juan Manuel",0,0,1,1,0,0,0,2,45,"Si","2019","DEUMA","Hombre","Tijuana"
-"264","Sánchez Rodríguez, Roberto Alejandro",1,1,0,1,1,0,0,7.55,107.5,"Si","2019","DEUMA","Hombre","Tijuana"
-"265","Santes Álvarez, Ricardo Valentín",0,0,2,1,2,0,0,4.5,97.5,"Si","2019","DEUMA","Hombre","Tijuana"
-"266","Toudert Djamel, Eddine",3,1,1,0,0,0,0,14.8,165,"Si","2019","DEUMA","Hombre","Tijuana"
+,Nombre,Artículos_A,Artículos_B,Artículos_C,cap_Aut,cap_Coaut.,L_Autor,L_Coaut.,pts_prod,Hrs_cls,cumplio,date,Departamento,Sexo,Sede
+1,"Arzaluz Solano, María del Socorro",0,0,1,2,3,0,0,5.25,143,Si,2017,DEAP,Mujer,Monterrey
+2,"Espinoza Valle, Víctor Alejandro",0,0,8,3,1,1,0,15.75,93,Si,2017,DEAP,Hombre,Tijuana
+3,"García Quiroz, Blanca Cecilia",0,1,0,2,0,0,0,3.8,133,Si,2017,DEAP,Mujer,Monterrey
+4,"Hernández Hernández, Alberto",0,0,1,1,1,0,1,5.75,172,Si,2017,DEAP,Hombre,Tijuana
+5,"López León, María Artemisa",0,0,0,3,1,0,0,3.75,32,Si,2017,DEAP,Mujer,Matamoros
+6,"Monsiváis Carrillo, Carlos Alejandro",0,2,0,4,1,0,0,8.35,85,Si,2017,DEAP,Hombre,Tijuana
+7,"Ramos García, José María",1,3,0,3,5,1,0,20.15,79,Si,2017,DEAP,Hombre,Tijuana
+8,"Rubio Campos, Jesús",0,2,1,2,2,0,0,8.1,55,Si,2017,DEAP,Hombre,Monterrey
+9,"Sánchez Munguía, Vicente",0,0,0,5,0,0,0,5,62,Si,2017,DEAP,Hombre,Tijuana
+10,"Sarabia Ríos, Cecilia",0,0,1,2,0,0,0,3,88,Si,2017,DEAP,Mujer,Monterrey
+11,Zavala Álvarez José,0,0,0,0,0,0,0,0,0,No,2017,DEAP,Hombre,Mexicali
+12,"Alonso Meneses, Guillermo",0,0,1,2,0,0,0,3,40,Si,2017,DEC,Hombre,Tijuana
+13,"Contreras Delgado, Camilo",0,1,0,1,1,0,0,3.55,92.5,Si,2017,DEC,Hombre,Monterrey
+14,"Cruz Sierra, Salvador",0,0,0,5,0,0,0,5,165,Si,2017,DEC,Hombre,Juárez
+15,"Fernández De Juan, Teresa",1,0,4,0,0,0,0,8,35,Si,2017,DEC,Mujer,Tijuana
+16,"Monárrez Fragoso, Julia Estela",0,1,0,1,0,0,0,2.8,59,Si,2017,DEC,Mujer,Juárez
+17,"Nieto Camacho, Ana Lilia",0,0,1,1,0,0,0,2,52.5,Si,2017,DEC,Mujer,Tijuana
+18,"Olmos Aguilera, Miguel",0,0,0,7,0,0,0,7,45,Si,2017,DEC,Hombre,Tijuana
+19,"París Pombo, María Dolores",1,1,1,0,3,0,0,9.05,40,Si,2017,DEC,Mujer,Tijuana
+20,"Ruiz Marrujo, Olivia Teresa",0,1,0,2,0,0,0,3.8,75,Si,2017,DEC,Mujer,Tijuana
+21,"Taylor Hansen, Lawrance Douglas",1,0,1,1,0,0,0,6,42.5,Si,2017,DEC,Hombre,Tijuana
+22,"Valencia Triana, Margarita",1,0,0,5,0,1,0,13,117,Si,2017,DEC,Mujer,Tijuana
+23,"Velasco Ortiz, Matilde Laura",2,1,0,1,0,0,0,10.8,120,Si,2017,DEC,Mujer,Tijuana
+24,"Zárate Ruiz, Arturo",0,0,0,3,0,0,0,3,55,Si,2017,DEC,Hombre,Matamoros
+25,"Brugués Rodríguez, Alejandro",1,0,2,0,1,0,0,6.75,89,Si,2017,DEE,Hombre,Juárez
+26,"Calderón Villarreal, Cuauhtémoc",1,4,3,0,2,0,0,15.7,70,Si,2017,DEE,Hombre,Tijuana
+27,"Corrales Corrales, Salvador",0,3,1,0,1,0,0,7.15,45,Si,2017,DEE,Hombre,Monterrey
+28,"Díaz Bautista, Alejandro",0,0,2,0,0,0,0,2,75,Si,2017,DEE,Hombre,Tijuana
+29,"Díaz González, Eliseo",1,1,0,3,2,0,1,13.3,112.5,Si,2017,DEE,Hombre,Tijuana
+30,"Fuentes Flores, Noé Arón",0,1,1,0,0,0,0,2.8,142.5,Si,2017,DEE,Hombre,Tijuana
+31,"González Andrade, Salvador",0,1,1,0,3,0,0,5.05,40,Si,2017,DEE,Hombre,Tijuana
+32,"Hernández Bielma, Leticia",0,1,0,0,1,0,0,2.55,85,Si,2017,DEE,Mujer,Tijuana
+33,"Mendoza Cota, Jorge Eduardo",0,5,3,3,0,0,0,15,210.5,Si,2017,DEE,Hombre,Tijuana
+34,"Rivera Castañeda, Patricia",0,2,0,0,0,0,0,3.6,70,Si,2017,DEE,Mujer,Tijuana
+35,"Vásquez Galán, Belem Iliana",0,2,1,0,0,0,0,4.6,100,Si,2017,DEE,Mujer,Monterrey
+36,"Acosta Díaz, Félix",1,0,1,0,4,0,0,8,83,Si,2017,DEP,Hombre,Tijuana
+37,"Bojórquez Chapela, Ietza Rocio",6,1,0,0,0,0,0,25.8,142.5,Si,2017,DEP,Mujer,Tijuana
+38,"Calva Sánchez, Luis Enrique",1,0,1,1,0,0,0,6,45,Si,2017,DEP,Hombre,Monterrey
+39,"Coubès, Marie-Laure",0,1,0,0,1,0,0,2.55,113,Si,2017,DEP,Mujer,Tijuana
+40,"Cruz Piñeiro, Rodolfo",0,1,0,0,7,0,0,7.05,177.5,Si,2017,DEP,Hombre,Tijuana
+41,"Cueva Luna, Teresa Elizabeth",1,0,0,2,0,0,0,6,77.5,Si,2017,DEP,Mujer,Matamoros
+42,"González Galbán, Humberto",1,1,0,0,0,0,0,5.8,20,Si,2017,DEP,Hombre,Tijuana
+43,"González Ramírez, Raúl Sergio",1,0,0,0,0,0,0,4,37.5,Si,2017,DEP,Hombre,Tijuana
+44,"Ham Chande, Roberto",1,1,0,0,1,0,0,6.55,0,Si,2017,DEP,Hombre,Tijuana
+45,"Ley Cervantes, Melissa",2,0,0,0,0,0,0,8,20,Si,2017,DEP,Mujer,Monterrey
+46,"López Estrada, Silvia",1,0,0,3,1,0,0,7.75,112.5,Si,2017,DEP,Mujer,Tijuana
+47,"Palma Cabrera, Yolanda",0,0,1,1,0,0,0,2,70,Si,2017,DEP,Mujer,Tijuana
+48,"Peña Muñoz, Jesús Javier",1,0,2,0,0,0,0,6,46,Si,2017,DEP,Hombre,Juárez
+49,"Schwartz Post, Norah Anita",1,0,0,0,0,0,0,4,0,Si,2017,DEP,Mujer,Tijuana
+50,"Uribe Salas, Felipe Javier",3,1,0,1,0,0,0,14.8,65,Si,2017,DEP,Hombre,P.Negras
+51,"Vargas Valle, Eunice Danitza",0,6,0,1,0,0,0,11.8,167.5,Si,2017,DEP,Mujer,Tijuana
+52,"Vázquez Delgado, Blanca Delia",0,0,0,2,0,1,0,6,22,Si,2017,DEP,Mujer,Monterrey
+53,"Von Glascoe, Christine Alysse",1,0,0,0,3,0,0,6.25,0,Si,2017,DEP,Mujer,Tijuana
+54,"Ybañez Zepeda, Elmyra",0,1,0,0,2,0,0,3.3,52,Si,2017,DEP,Mujer,Tijuana
+55,"Alarcón Acosta, Rafael G.",0,1,0,2,0,0,1,6.8,167.5,Si,2017,DES,Hombre,Tijuana
+56,"Anguiano Téllez, María Eugenia",1,0,0,1,4,0,0,8,267,Si,2017,DES,Mujer,Tijuana
+57,"Barajas Escamilla, María del Rosío",0,1,1,3,2,0,0,7.3,57.5,Si,2017,DES,Mujer,Tijuana
+58,"Carrillo Viveros, Jorge Héctor",2,3,0,0,4,1,2,26.4,132.5,Si,2017,DES,Hombre,Tijuana
+59,"Gomis Hernández, Redi",1,0,0,0,1,0,0,4.75,127.5,Si,2017,DES,Hombre,Tijuana
+60,"Hernández Hernández, Oscar Misael",0,2,2,10,0,0,1,18.6,85,Si,2017,DES,Hombre,Matamoros
+61,"Hualde Alfaro, Alfredo",1,0,1,0,5,0,0,8.75,167,Si,2017,DES,Hombre,Tijuana
+62,"Jurado Montelongo, Mario Alberto",0,2,0,0,1,0,0,4.35,10,Si,2017,DES,Hombre,Monterrey
+63,"Matus Ruiz, Maximino",0,1,0,3,4,0,0,7.8,20,Si,2017,DES,Hombre,Tijuana
+64,"Miker Palafox, Martha",0,0,0,1,0,0,0,1,136.5,No,2017,DES,Mujer,Tijuana
+65,"Odgers Ortiz, Olga",0,0,0,0,0,0,2,6,132.5,Si,2017,DES,Mujer,Tijuana
+66,"Pérez Floriano, Lorena Raquel",0,0,0,0,1,0,0,0.75,15,No,2017,DES,Mujer,Tijuana
+67,"Solís Pérez, Marlene Celia",1,0,0,3,1,0,0,7.75,142.5,Si,2017,DES,Mujer,Tijuana
+68,"Aguilar Benítez, Ismael",1,0,0,0,1,0,0,4.75,115,Si,2017,DEUMA,Hombre,Monterrey
+69,Bringas Rábago Nora Leticia,3,1,1,0,3,0,0,17.05,37.5,Si,2017,DEUMA,Mujer,Tijuana
+70,"Castro Ruiz, José Luis",0,0,0,0,3,0,0,2.25,90,Si,2017,DEUMA,Hombre,Monterrey
+71,"Córdova Bojórquez, Gustavo",0,2,1,0,0,0,1,7.6,92,Si,2017,DEUMA,Hombre,Juárez
+72,"Córdova y Vázquez, Ana",0,0,1,1,0,0,0,2,65,Si,2017,DEUMA,Mujer,Juárez
+73,"Cortez Lara, Alfonso Andrés",0,0,0,1,1,0,0,1.75,60,No,2017,DEUMA,Hombre,Mexicali
+74,"Fuentes Flores, César Mario",2,1,0,0,2,0,0,11.3,181.5,Si,2017,DEUMA,Hombre,Juárez
+75,"García Ochoa, Rigoberto",2,1,2,1,0,0,0,12.8,90.5,Si,2017,DEUMA,Hombre,Nogales
+76,"González Ávila, María Eugenia",2,0,1,2,2,0,0,12.5,65,Si,2017,DEUMA,Mujer,Monterrey
+77,"Manzanares Rivera, José Luis",5,4,1,1,0,0,0,29.2,100,Si,2017,DEUMA,Hombre,Nogales
+78,"Muñoz Meléndez, Gabriela",0,1,1,1,3,0,0,6.05,190,Si,2017,DEUMA,Mujer,Tijuana
+79,"Ojeda Revah, Lina",0,1,0,0,1,0,0,2.55,80.5,Si,2017,DEUMA,Mujer,Tijuana
+80,"Oliveras González, Xavier",1,3,0,1,3,0,0,12.65,40,Si,2017,DEUMA,Hombre,Matamoros
+81,"Peña Medina, Sergio",0,2,1,2,1,1,0,11.35,95,Si,2017,DEUMA,Hombre,Juárez
+82,"Pombo López, Oscar Alberto",0,0,0,1,0,0,0,1,45,No,2017,DEUMA,Hombre,Tijuana
+83,"Riemann González, Hugo",1,0,0,2,1,0,0,6.75,0,Si,2017,DEUMA,Hombre,Tijuana
+84,"Sánchez Rodríguez, Roberto Alejandro",0,1,0,1,1,0,0,3.55,202.5,Si,2017,DEUMA,Hombre,Tijuana
+85,"Santes Álvarez, Ricardo Valentín",0,0,2,2,0,0,0,4,30,Si,2017,DEUMA,Hombre,Tijuana
+86,"Toudert Djamel, Eddine",3,2,0,1,1,0,0,17.35,110,Si,2017,DEUMA,Hombre,Tijuana
+87,"Vázquez León, Carlos Israel",0,0,0,1,0,0,0,1,120,No,2017,DEUMA,Hombre,Tijuana
+88,"Arzaluz Solano, María del Socorro",0,0,1,1,6,0,0,6.5,145.5,Si,2018,DEAP,Mujer,Monterrey
+89,"García Quiroz, Blanca Cecilia",0,0,0,3,0,0,0,3,58,Si,2018,DEAP,Mujer,Monterrey
+90,"López León, María Artemisa",0,0,1,5,0,0,0,6,40,Si,2018,DEAP,Mujer,Matamoros
+91,"Monsiváis Carrillo, Carlos Alejandro",1,1,0,5,0,1,0,14.8,185,Si,2018,DEAP,Hombre,Tijuana
+92,"Rubio Campos, Jesús",0,4,0,2,1,0,0,9.95,55,Si,2018,DEAP,Hombre,Monterrey
+93,"Sánchez Munguía, Vicente",0,0,0,4,0,0,0,4,52,Si,2018,DEAP,Hombre,Tijuana
+94,"Sarabia Ríos, Cecilia",0,0,1,2,0,1,0,7,95,Si,2018,DEAP,Mujer,Monterrey
+95,"Alonso Meneses, Guillermo",0,0,2,0,0,0,0,2,107.5,Si,2018,DEC,Hombre,Tijuana
+96,"Contreras Delgado, Camilo",0,2,0,0,1,0,1,5.85,92.5,Si,2018,DEC,Hombre,Monterrey
+97,"Cruz Sierra, Salvador",0,0,0,4,0,0,0,4,170,Si,2018,DEC,Hombre,Juárez
+98,"Fernández De Juan, Teresa",1,0,3,1,0,0,0,8,20,Si,2018,DEC,Mujer,Tijuana
+99,Maier-Hirsch Elizabeth Jean,0,2,0,0,0,0,0,3.6,110,Si,2018,DEC,Mujer,Tijuana
+100,"Monárrez Fragoso, Julia Estela",0,1,0,3,0,0,0,4.8,35,Si,2018,DEC,Mujer,Juárez
+101,"Nieto Camacho, Ana Lilia",0,0,0,0,0,0,0,0,45,No,2018,DEC,Mujer,Tijuana
+102,"Olmos Aguilera, Miguel",0,1,0,3,1,0,0,5.55,45,Si,2018,DEC,Hombre,Tijuana
+103,"París Pombo, María Dolores",1,0,1,0,1,1,0,9.75,100,Si,2018,DEC,Mujer,Tijuana
+104,"Ruiz Marrujo, Olivia Teresa",0,1,0,2,0,0,0,3.8,117.5,Si,2018,DEC,Mujer,Tijuana
+105,"Taylor Hansen, Lawrance Douglas",1,0,1,0,0,0,0,5,42.5,Si,2018,DEC,Hombre,Tijuana
+106,"Valencia Triana, Margarita",1,0,1,1,0,1,0,10,87,Si,2018,DEC,Mujer,Tijuana
+107,Valenzuela Arce José Manuel,0,0,0,3,0,0,0,3,320,Si,2018,DEC,Hombre,Tijuana
+108,"Velasco Ortiz, Matilde Laura",1,1,0,2,0,0,1,10.8,175,Si,2018,DEC,Mujer,Tijuana
+109,"Zárate Ruiz, Arturo",0,0,2,2,0,0,0,4,19,Si,2018,DEC,Hombre,Matamoros
+110,"Bruce, Benjamín Patrick",0,0,1,0,0,0,0,1,30,No,2018,DEC,Hombre,Monterrey
+111,"Hernández López, Ana Gabriela",1,0,0,0,0,0,0,4,0,Si,2018,DEC,Mujer,Tijuana
+112,"Brugués Rodríguez, Alejandro",1,0,1,0,1,0,0,5.75,97.5,Si,2018,DEE,Hombre,Juárez
+113,"Calderón Villarreal, Cuauhtémoc",3,6,2,0,3,0,0,27.05,70,Si,2018,DEE,Hombre,Tijuana
+114,"Corrales Corrales, Salvador",0,3,1,2,1,0,0,9.15,45,Si,2018,DEE,Hombre,Monterrey
+115,"Díaz Bautista, Alejandro",0,0,1,0,1,0,0,1.75,97.5,No,2018,DEE,Hombre,Tijuana
+116,"Díaz González, Eliseo",1,0,1,3,2,2,0,17.5,100,Si,2018,DEE,Hombre,Tijuana
+117,"Fuentes Flores, Noé Arón",0,1,1,0,5,0,0,6.55,130,Si,2018,DEE,Hombre,Tijuana
+118,"González Andrade, Salvador",0,1,1,1,2,0,0,5.3,62.5,Si,2018,DEE,Hombre,Tijuana
+119,"Hernández Bielma, Leticia",0,1,1,0,1,0,0,3.55,62.5,Si,2018,DEE,Mujer,Tijuana
+120,"Mendoza Cota, Jorge Eduardo",0,3,2,4,1,0,0,12.15,260,Si,2018,DEE,Hombre,Tijuana
+121,"Rivera Castañeda, Patricia",0,1,0,0,1,0,0,2.55,85,Si,2018,DEE,Mujer,Tijuana
+122,"Vásquez Galán, Belem Iliana",1,2,1,0,0,0,0,8.6,75,Si,2018,DEE,Mujer,Monterrey
+123,"Bojórquez Chapela, Ietza Rocio",7,2,0,0,0,0,0,31.6,240,Si,2018,DEP,Mujer,Tijuana
+124,"Coubès, Marie-Laure",0,1,0,0,1,0,0,2.55,135.5,Si,2018,DEP,Mujer,Tijuana
+125,"Cueva Luna, Teresa Elizabeth",1,0,0,1,1,0,0,5.75,97.5,Si,2018,DEP,Mujer,Matamoros
+126,"González Galbán, Humberto",1,2,3,0,0,0,0,10.6,20,Si,2018,DEP,Hombre,Tijuana
+127,"Ham Chande, Roberto",2,1,0,0,1,0,0,10.8,15,Si,2018,DEP,Hombre,Tijuana
+128,"López Estrada, Silvia",0,1,0,2,0,0,0,3.8,145,Si,2018,DEP,Mujer,Tijuana
+129,Mejía Arango Silvia Elena,2,1,0,0,3,0,0,12.05,125,Si,2018,DEP,Mujer,Tijuana
+130,"Palma Cabrera, Yolanda",0,0,1,0,0,0,0,1,40,No,2018,DEP,Mujer,Tijuana
+131,"Uribe Salas, Felipe Javier",2,0,2,1,0,0,0,11,25,Si,2018,DEP,Hombre,P.Negras
+132,"Vargas Valle, Eunice Danitza",1,6,0,0,0,0,0,14.8,237.5,Si,2018,DEP,Mujer,Tijuana
+133,"Vázquez Delgado, Blanca Delia",0,0,1,3,0,0,0,4,32.5,Si,2018,DEP,Mujer,Monterrey
+134,"Von Glascoe, Christine Alysse",1,1,0,0,2,0,0,7.3,0,Si,2018,DEP,Mujer,Tijuana
+135,"Ybañez Zepeda, Elmyra",0,2,0,0,1,0,0,4.35,112,Si,2018,DEP,Mujer,Tijuana
+136,"Calva Sánchez, Luis Enrique",0,0,0,1,2,0,0,2.5,153,Si,2018,DEP,Hombre,Monterrey
+137,"Ley Cervantes, Melissa",0,0,0,0,0,0,0,0,0,No,2018,DEP,Mujer,Monterrey
+138,"Peña Muñoz, Jesús Javier",0,2,0,0,0,0,0,3.6,0,Si,2018,DEP,Hombre,Juárez
+139,"Portillo Tellez, María del Carmen",1,0,0,0,0,0,0,4,5,Si,2018,DEP,Mujer,P.Negras
+140,"Rosales Martínez, Yetzi",0,2,0,0,0,0,0,3.6,0,Si,2018,DEP,Mujer,Monterrey
+141,"Alarcón Acosta, Rafael G.",0,2,0,1,2,0,1,9.1,217.5,Si,2018,DES,Hombre,Tijuana
+142,Almaraz Alvarado Araceli,0,0,0,3,0,0,0,3,80,Si,2018,DES,Mujer,Tijuana
+143,"Anguiano Téllez, María Eugenia",1,0,0,0,3,0,0,6.25,253,Si,2018,DES,Mujer,Tijuana
+144,"Carrillo Viveros, Jorge Héctor",1,2,0,1,9,0,3,24.35,97.5,Si,2018,DES,Hombre,Tijuana
+145,"Gomis Hernández, Redi",1,1,0,0,1,0,0,6.55,109,Si,2018,DES,Hombre,Tijuana
+146,"Hernández Hernández, Oscar Misael",1,1,2,7,0,0,0,14.8,70,Si,2018,DES,Hombre,Matamoros
+147,"Jurado Montelongo, Mario Alberto",0,1,0,0,1,0,0,2.55,10,No,2018,DES,Hombre,Monterrey
+148,"Miker Palafox, Martha",0,0,0,0,3,0,0,2.25,112.5,Si,2018,DES,Mujer,Tijuana
+149,"Odgers Ortiz, Olga",1,1,0,0,0,0,2,11.8,175,Si,2018,DES,Mujer,Tijuana
+150,"Pérez Floriano, Lorena Raquel",0,0,1,0,2,0,0,2.5,35,No,2018,DES,Mujer,Tijuana
+151,"Solís Pérez, Marlene Celia",0,1,2,1,3,0,0,7.05,122.5,Si,2018,DES,Mujer,Tijuana
+152,"Matus Ruiz, Maximino",0,2,0,1,5,0,0,8.35,102,Si,2018,DES,Hombre,Tijuana
+153,"Aguilar Benítez, Ismael",1,1,0,0,1,0,0,6.55,145,Si,2018,DEUMA,Hombre,Monterrey
+154,Bringas Rábago Nora Leticia,2,1,0,1,2,0,0,12.3,119.5,Si,2018,DEUMA,Mujer,Tijuana
+155,"Castro Ruiz, José Luis",0,1,0,0,3,0,0,4.05,90,Si,2018,DEUMA,Hombre,Monterrey
+156,"Córdova Bojórquez, Gustavo",0,3,0,1,0,0,1,7.9,89,Si,2018,DEUMA,Hombre,Juárez
+157,"Córdova y Vázquez, Ana",1,0,1,0,1,0,0,5.75,20,Si,2018,DEUMA,Mujer,Juárez
+158,"Cortez Lara, Alfonso Andrés",0,0,0,1,1,0,0,1.75,60,No,2018,DEUMA,Hombre,Mexicali
+159,De la Parra Rentería Carlos Alfonso,1,0,0,0,2,0,0,5.5,0,Si,2018,DEUMA,Hombre,Tijuana
+160,"Fuentes Flores, César Mario",1,1,0,0,2,0,1,10.3,120,Si,2018,DEUMA,Hombre,Juárez
+161,"García Ochoa, Rigoberto",2,0,0,2,0,0,0,10,157.5,Si,2018,DEUMA,Hombre,Nogales
+162,"González Ávila, María Eugenia",2,0,0,2,2,0,0,11.5,65,Si,2018,DEUMA,Mujer,Monterrey
+163,"Manzanares Rivera, José Luis",6,3,0,1,0,0,0,30.4,65,Si,2018,DEUMA,Hombre,Nogales
+164,"Muñoz Meléndez, Gabriela",0,0,0,2,1,0,0,2.75,215,Si,2018,DEUMA,Mujer,Tijuana
+165,"Oliveras González, Xavier",0,1,2,0,3,0,0,6.05,62.5,Si,2018,DEUMA,Hombre,Matamoros
+166,"Peña Medina, Sergio",0,1,0,1,0,0,1,5.8,67.5,Si,2018,DEUMA,Hombre,Juárez
+167,"Pombo López, Oscar Alberto",0,0,0,0,0,0,0,0,45,No,2018,DEUMA,Hombre,Tijuana
+168,"Riemann González, Hugo",1,0,0,0,0,0,0,4,0,Si,2018,DEUMA,Hombre,Tijuana
+169,Rodríguez Esteves Juan Manuel,0,1,1,0,0,0,0,2.8,115,Si,2018,DEUMA,Hombre,Tijuana
+170,"Sánchez Rodríguez, Roberto Alejandro",0,1,0,0,0,0,0,1.8,197.5,No,2018,DEUMA,Hombre,Tijuana
+171,"Santes Álvarez, Ricardo Valentín",0,0,2,1,0,0,0,3,97.5,Si,2018,DEUMA,Hombre,Tijuana
+172,"Toudert Djamel, Eddine",2,3,0,1,0,0,0,14.4,120,Si,2018,DEUMA,Hombre,Tijuana
+173,"Vázquez León, Carlos Israel",0,0,0,0,1,0,0,0.75,30,No,2018,DEUMA,Hombre,Tijuana
+174,"Arzaluz Solano, María del Socorro",0,0,0,0,6,0,0,4.5,75.5,Si,2019,DEAP,Mujer,Monterrey
+175,"García Quiroz, Blanca Cecilia",0,0,0,4,1,0,0,4.75,83,Si,2019,DEAP,Mujer,Monterrey
+176,"López León, María Artemisa",0,0,1,4,0,0,0,5,52.5,Si,2019,DEAP,Mujer,Matamoros
+177,"Monsiváis Carrillo, Carlos Alejandro",1,1,0,1,0,1,0,10.8,190,Si,2019,DEAP,Hombre,Tijuana
+178,"Rubio Campos, Jesús",1,4,0,1,0,0,0,12.2,65,Si,2019,DEAP,Hombre,Monterrey
+179,"Sánchez Munguía, Vicente",0,1,0,2,0,0,0,3.8,20,Si,2019,DEAP,Hombre,Tijuana
+180,"Sarabia Ríos, Cecilia",0,0,2,1,0,1,0,7,72,Si,2019,DEAP,Mujer,Monterrey
+181,"Vera López, Juana Isabel",0,2,0,3,0,0,0,6.6,55,Si,2019,DEAP,Mujer,P.Negras
+182,Zavala Álvarez José,0,0,0,0,0,0,0,0,0,No,2019,DEAP,Hombre,Mexicali
+183,"Alarcón Medina, Rafael",2,0,1,2,0,0,0,11,82.5,Si,2019,DEC,Hombre,Tijuana
+184,"Cruz Sierra, Salvador",0,0,0,4,0,0,0,4,125,Si,2019,DEC,Hombre,Juárez
+185,"Escala Rabadán , Luis",1,0,1,0,0,0,0,5,155,Si,2019,DEC,Hombre,Tijuana
+186,"Fernández De Juan, Teresa",1,0,3,1,0,0,0,8,0,Si,2019,DEC,Mujer,Tijuana
+187,Maier-Hirsch Elizabeth Jean,0,1,0,0,0,0,0,1.8,45,No,2019,DEC,Mujer,Tijuana
+188,"Monárrez Fragoso, Julia Estela",0,0,2,3,0,0,0,5,167.5,Si,2019,DEC,Mujer,Juárez
+189,"Nieto Camacho, Ana Lilia",0,0,0,0,0,0,0,0,75,No,2019,DEC,Mujer,Tijuana
+190,"Olmos Aguilera, Miguel",0,1,0,5,1,0,0,7.55,72.5,Si,2019,DEC,Hombre,Tijuana
+191,"Ruiz Marrujo, Olivia Teresa",0,0,0,2,0,0,0,2,92.5,Si,2019,DEC,Mujer,Tijuana
+192,"Taylor Hansen, Lawrance Douglas",1,0,0,0,0,0,0,4,22.5,Si,2019,DEC,Hombre,Tijuana
+193,"Valencia Triana, Margarita",1,1,0,2,0,0,0,7.8,200,Si,2019,DEC,Mujer,Tijuana
+194,Valenzuela Arce José Manuel,0,0,0,3,0,1,0,7,117.5,Si,2019,DEC,Hombre,Tijuana
+195,"Velasco Ortiz, Matilde Laura",0,1,0,2,0,0,1,6.8,180,Si,2019,DEC,Mujer,Tijuana
+196,"Zárate Ruiz, Arturo",0,0,1,4,0,0,0,5,19,Si,2019,DEC,Hombre,Matamoros
+197,"Bruce, Benjamín Patrick",2,0,1,0,0,1,0,13,80,Si,2019,DEC,Hombre,Monterrey
+198,Díaz Carnero Emiliano Ignacio,0,0,0,0,0,0,0,0,20,No,2019,DEC,Hombre,Juárez
+199,"Hernández López, Ana Gabriela",0,0,0,0,0,0,0,0,142.5,No,2019,DEC,Mujer,Tijuana
+200,Medina Parra Rosa Isabel,0,0,0,0,0,0,0,0,0,No,2019,DEC,Mujer,Juárez
+201,Pérez Caballero Jesús,0,0,0,2,0,0,0,2,0,No,2019,DEC,Hombre,Matamoros
+202,Sumano Rodríguez José Andrés,0,0,1,2,0,1,0,7,23,Si,2019,DEC,Hombre,Matamoros
+203,"Brugués Rodríguez, Alejandro",0,2,0,0,3,0,0,5.85,105,Si,2019,DEE,Hombre,Juárez
+204,"Calderón Villarreal, Cuauhtémoc",4,4,0,0,3,0,0,25.45,80,Si,2019,DEE,Hombre,Tijuana
+205,"Corrales Corrales, Salvador",0,0,0,2,0,0,0,2,45,Si,2019,DEE,Hombre,Monterrey
+206,"Díaz Bautista, Alejandro",0,0,0,0,1,0,0,0.75,132.5,No,2019,DEE,Hombre,Tijuana
+207,"Díaz González, Eliseo",1,0,1,2,0,1,0,11,115,Si,2019,DEE,Hombre,Tijuana
+208,"Fuentes Flores, Noé Arón",0,2,0,0,6,0,0,8.1,75,Si,2019,DEE,Hombre,Tijuana
+209,"González Andrade, Salvador",0,1,0,1,0,0,0,2.8,72.5,Si,2019,DEE,Hombre,Tijuana
+210,"Hernández Bielma, Leticia",1,1,0,0,0,0,0,5.8,72.5,Si,2019,DEE,Mujer,Tijuana
+211,Peláez Herreros Óscar,1,1,3,1,1,0,0,10.55,165,Si,2019,DEE,Hombre,Tijuana
+212,"Rivera Castañeda, Patricia",0,4,0,0,3,0,0,9.45,105,Si,2019,DEE,Mujer,Tijuana
+213,"Vásquez Galán, Belem Iliana",1,0,1,1,0,0,0,6,85,Si,2019,DEE,Mujer,Monterrey
+214,"Acosta Díaz, Félix",0,0,0,0,0,0,0,0,83,No,2019,DEP,Hombre,Tijuana
+215,"Bojórquez Chapela, Ietza Rocio",10,2,0,0,0,0,0,43.6,270,Si,2019,DEP,Mujer,Tijuana
+216,"Coubès, Marie-Laure",0,0,0,0,1,0,0,0.75,98,No,2019,DEP,Mujer,Tijuana
+217,"Cueva Luna, Teresa Elizabeth",0,0,2,1,2,0,0,4.5,57.5,Si,2019,DEP,Mujer,Matamoros
+218,"González Galbán, Humberto",1,2,2,0,0,0,0,9.6,0,Si,2019,DEP,Hombre,Tijuana
+219,"González Ramírez, Raúl Sergio",0,1,0,0,2,0,0,3.3,0,Si,2019,DEP,Hombre,Tijuana
+220,"Ham Chande, Roberto",2,0,0,0,1,0,0,8.75,35,Si,2019,DEP,Hombre,Tijuana
+221,"López Estrada, Silvia",0,1,0,1,0,0,0,2.8,97.5,Si,2019,DEP,Mujer,Tijuana
+222,Mejía Arango Silvia Elena,1,0,0,0,2,0,0,5.5,120,Si,2019,DEP,Mujer,Tijuana
+223,"Palma Cabrera, Yolanda",0,0,0,0,3,1,0,6.25,25,Si,2019,DEP,Mujer,Tijuana
+224,Rangel Gómez María Gudelia,1,0,0,0,0,0,0,4,0,Si,2019,DEP,Mujer,Tijuana
+225,"Schwartz Post, Norah Anita",1,0,0,0,1,0,0,4.75,0,Si,2019,DEP,Mujer,Tijuana
+226,"Uribe Salas, Felipe Javier",1,0,2,0,1,0,0,6.75,5,Si,2019,DEP,Hombre,P.Negras
+227,"Vargas Valle, Eunice Danitza",3,3,0,0,1,0,0,18.15,190,Si,2019,DEP,Mujer,Tijuana
+228,"Vázquez Delgado, Blanca Delia",1,0,0,0,1,0,0,4.75,54.5,Si,2019,DEP,Mujer,Monterrey
+229,"Von Glascoe, Christine Alysse",1,1,1,0,3,0,0,9.05,0,Si,2019,DEP,Mujer,Tijuana
+230,"Ybañez Zepeda, Elmyra",0,1,0,0,1,0,0,2.55,70,Si,2019,DEP,Mujer,Tijuana
+231,"Calva Sánchez, Luis Enrique",0,1,0,1,2,0,0,4.3,65,Si,2019,DEP,Hombre,Monterrey
+232,"Peña Muñoz, Jesús Javier",0,2,0,1,1,0,0,5.35,0,Si,2019,DEP,Hombre,Juárez
+233,"Portillo Tellez, María del Carmen",2,0,0,0,0,0,0,8,5,Si,2019,DEP,Mujer,P.Negras
+234,"Rosales Martínez, Yetzi",0,2,0,0,1,0,0,4.35,0,Si,2019,DEP,Mujer,Monterrey
+235,"Alarcón Acosta, Rafael G.",0,1,0,1,2,0,0,4.3,197.5,Si,2019,DES,Hombre,Tijuana
+236,Almaraz Alvarado Araceli,0,1,0,1,1,0,1,6.55,30,Si,2019,DES,Mujer,Tijuana
+237,"Carrillo Viveros, Jorge Héctor",0,2,0,2,9,0,3,21.35,82.5,Si,2019,DES,Hombre,Tijuana
+238,"Gomis Hernández, Redi",1,1,0,0,1,0,1,9.55,124,Si,2019,DES,Hombre,Tijuana
+239,"Hernández Hernández, Oscar Misael",1,2,2,2,1,0,0,12.35,70,Si,2019,DES,Hombre,Matamoros
+240,"Hualde Alfaro, Alfredo",0,1,1,1,1,1,0,8.55,125,Si,2019,DES,Hombre,Tijuana
+241,"Jurado Montelongo, Mario Alberto",0,0,1,0,1,0,0,1.75,30,No,2019,DES,Hombre,Monterrey
+242,"Miker Palafox, Martha",0,0,1,0,3,0,0,3.25,137,Si,2019,DES,Mujer,Tijuana
+243,"Odgers Ortiz, Olga",2,1,0,1,1,0,0,11.55,230,Si,2019,DES,Mujer,Tijuana
+244,Quintero Ramírez Cirila,0,1,0,1,1,0,0,3.55,87.5,Si,2019,DES,Mujer,Matamoros
+245,"Solís Pérez, Marlene Celia",0,2,4,0,3,0,0,9.85,10,Si,2019,DES,Mujer,Tijuana
+246,"Matus Ruiz, Maximino",0,1,0,1,1,0,0,3.55,192,Si,2019,DES,Hombre,Tijuana
+247,"Aguilar Benítez, Ismael",0,1,0,1,1,0,0,3.55,105,Si,2019,DEUMA,Hombre,Monterrey
+248,Alegría Olazábal Tito Alejandro,1,0,0,2,0,0,0,6,105,Si,2019,DEUMA,Hombre,Tijuana
+249,Bringas Rábago Nora Leticia,2,0,0,1,1,0,0,9.75,92.5,Si,2019,DEUMA,Mujer,Tijuana
+250,"Castro Ruiz, José Luis",0,2,0,0,3,0,0,5.85,25,Si,2019,DEUMA,Hombre,Monterrey
+251,"Córdova Bojórquez, Gustavo",0,4,2,2,0,0,1,12.7,70,Si,2019,DEUMA,Hombre,Juárez
+252,"Córdova y Vázquez, Ana",4,0,1,0,1,0,0,17.75,0,Si,2019,DEUMA,Mujer,Juárez
+253,"Cortez Lara, Alfonso Andrés",0,2,0,1,5,0,0,8.35,30,Si,2019,DEUMA,Hombre,Mexicali
+254,De la Parra Rentería Carlos Alfonso,2,0,0,0,0,0,0,8,0,Si,2019,DEUMA,Hombre,Tijuana
+255,"Fuentes Flores, César Mario",0,1,0,1,1,0,1,6.55,190,Si,2019,DEUMA,Hombre,Juárez
+256,"García Ochoa, Rigoberto",0,2,1,1,0,0,0,5.6,105,Si,2019,DEUMA,Hombre,Nogales
+257,"González Ávila, María Eugenia",0,2,0,2,0,0,0,5.6,20,Si,2019,DEUMA,Mujer,Monterrey
+258,"Manzanares Rivera, José Luis",4,1,1,1,0,0,0,19.8,70,Si,2019,DEUMA,Hombre,Nogales
+259,"Oliveras González, Xavier",0,2,2,2,1,0,0,8.35,65,Si,2019,DEUMA,Hombre,Matamoros
+260,"Peña Medina, Sergio",0,1,0,2,0,0,1,6.8,127.5,Si,2019,DEUMA,Hombre,Juárez
+261,"Pombo López, Oscar Alberto",0,1,0,1,0,0,0,2.8,90,Si,2019,DEUMA,Hombre,Tijuana
+262,"Riemann González, Hugo",0,0,0,0,0,0,0,0,65,No,2019,DEUMA,Hombre,Tijuana
+263,Rodríguez Esteves Juan Manuel,0,0,1,1,0,0,0,2,45,Si,2019,DEUMA,Hombre,Tijuana
+264,"Sánchez Rodríguez, Roberto Alejandro",1,1,0,1,1,0,0,7.55,107.5,Si,2019,DEUMA,Hombre,Tijuana
+265,"Santes Álvarez, Ricardo Valentín",0,0,2,1,2,0,0,4.5,97.5,Si,2019,DEUMA,Hombre,Tijuana
+266,"Toudert Djamel, Eddine",3,1,1,0,0,0,0,14.8,165,Si,2019,DEUMA,Hombre,Tijuana

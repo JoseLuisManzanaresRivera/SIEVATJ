@@ -29,12 +29,6 @@ googleAnalytics = "UA-123456789-1"
     pre = "smile"
     url = "/Análisis/"
     weight = 2
-  [[menu.nav]]
-    name = "Propuestas"
-    pre = "edit"
-    url = "/Propuestas/"
-    weight = 3
-    
 [params]
   includeBootstrapJs = false
   showActiveNav = true

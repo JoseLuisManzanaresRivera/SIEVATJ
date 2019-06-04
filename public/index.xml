@@ -140,15 +140,6 @@ Follow the following steps:
     </item>
     
     <item>
-      <title></title>
-      <link>/propuestas.nb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/propuestas.nb/</guid>
-      <description>code{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
-    </item>
-    
-    <item>
       <title> </title>
       <link>/ao/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -165,17 +156,8 @@ La calidad de los productos está claramente ponderada por el SIEVA, la calidad 
       
       <guid>/an%C3%A1lisis/</guid>
       <description>Análisis de la producción.Publicación de libros.La producción de libros es fundamental en un centro de investigación, no obstante estos son proyectos de largo plazo y expresiones de la trayectoria académica que reflejan un cierto grado de consolidación y liderazgo en un tema.
-Generalmente la inversión de tiempo necesaria para generar un libro es mayor que por ejemplo un artículo tipo A.</description>
-    </item>
-    
-    <item>
-      <title> </title>
-      <link>/propuestas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/propuestas/</guid>
-      <description>II. Esquema de evaluación de la producción académica como mecanismo de fortalecimiento del compromiso institucional.Se tienen áreas de oportunidad para mejorar los mecanismos de evaluación. Estos actúan como un esquema de transmisión de señales, que a su vez se traducen en incentivos que dirigen el desempeño de los investigadores.
-Propuesta I.La propuesta concreta es incluir una nueva figura denominada: Compromiso con la Formación de comunidad académica (FCA) mediante un equema de puntuación que valore el compromiso institucional medido a través del indicador FCA que fomente la participación en actividades de docencia en la institución en los siguientes rangos:</description>
+Producción de libros un rubro que se percibe como área de oportunidad.
+2. Calidad vs. Cantidad de producciónUn argumento a menudo enfatizado es la importancia de generar producción de calidad en contraste con un gran volumen de productos.</description>
     </item>
     
   </channel>
