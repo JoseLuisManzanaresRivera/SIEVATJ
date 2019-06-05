@@ -37,6 +37,7 @@ library(gridExtra)
 #### 1. Publicación  de libros.
 
 
+La producción de libros es fundamental en un centro de investigación, no obstante, estos son proyectos de largo plazo y expresiones de la trayectoria académica que reflejan un cierto grado de consolidación y liderazgo en un tema.
 
 
 ```{r, echo=FALSE,warning=FALSE,message=FALSE}
@@ -135,28 +136,24 @@ i<-group_by(tres,date,Departamento)%>%
 pa<-ggplot(i, aes(fct_reorder(Departamento,w_mean), w_mean, fill=Departamento))+
   geom_col()+ 
   coord_flip()+
-  labs(y="Artículos", subtitle="Total en el periodo 2017,2018,2019 por investigador y  Promedio por año  ()", x="Departamento",title="Artículos tipo A por departamento académico.")+
+  labs(y="Artículos", subtitle="Promedio por investigador por año.()", x="Departamento",title="Artículos tipo A por departamento académico promedio en periodo 2017,2018,2019.")+
   theme_light()+
-  annotate("text", x="DEUMA", y=5, label="(.92), 2.76")+
-  annotate("text", x="DEP", y=5, label="(1.08), 3.24 ")+
-  annotate("text", x="DEC", y=5, label="(.40), 1.20")+
-  annotate("text", x="DEAP", y=5, label="(0.15), 0.45")+
-  annotate("text", x="DES", y=5, label="(.40),1.20")+
-  annotate("text", x="DEE", y=5, label="(0.52), 1.56")+
+  annotate("text", x="DEUMA", y=5, label="(.92)")+
+  annotate("text", x="DEP", y=5, label="(1.08) ")+
+  annotate("text", x="DEC", y=5, label="(.40)")+
+  annotate("text", x="DEAP", y=5, label="(0.15)")+
+  annotate("text", x="DES", y=5, label="(.40)")+
+  annotate("text", x="DEE", y=5, label="(0.52)")+
   theme(legend.position='none')
 
-  .92*3
-  1.08*3
-0.52*3
 
-.40*3
 ggsave("Adep3.jpg", width = 25, height = 17, units = "cm",dpi=300)
 
 pa
 
 ```
 
-**¿Es equilibrada la praticipación de los investigadores en este tipo de productos?**
+**¿Es equilibrada la participación de los investigadores en este tipo de productos?**
 
 **¿Quien los produce?**
 
@@ -355,7 +352,7 @@ theme(legend.position='none')+
 ggsave("boxplot.jpg", width = 25, height = 17, units = "cm",dpi=300)
 ```
 
-La distribución en horas de docencia actual únicametne refleja el diseño institucional en el que tenemos una sede principal: Tijuana donde se concentran la gran mayoria de los programas docentes  y otras sedes que en su mayoria no cuentan con programas docentes.
+La distribución en horas de docencia actual refleja el diseño institucional en el que tenemos una sede principal: Tijuana donde se concentran la gran mayoria de los programas docentes  y otras sedes que en su mayoria no cuentan con programas docentes.
 
 Este diseño condiciona el perfil de activiades docentes de los investigadores entre las sedes.
 
