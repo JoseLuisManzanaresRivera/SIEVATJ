@@ -44,8 +44,8 @@ Un diagnóstico claro basado en instrumentos de evaluación objetivos permitirí
 
 <p align="justify">
 
-Con base en las áreas de oportunidad detectadas por el análisis se propone un dialogo para presentar propuestas concretas a través de las juntas de profesores para el diseño de estrategias conjuntas que contribuyan a reforzar este tema entre los investigadores en El Colef.
+Con base en las áreas de oportunidad detectadas por el análisis se propone un dialogo para presentar propuestas concretas a través de las juntas de profesores para el diseño de estrategias conjuntas que contribuyan a reforzar este tema de cara a la coyuntura actual.
 
-El Colef es una institución única en el ecosistema de CPI, con fortalezas evidentes. No obstante enfrenta retos propios de la coyutura actual que debemos resolver de forma conjunta. 
+El Colef es una institución única en el ecosistema de CPI, con fortalezas evidentes, sin emabargo no es ajena a la realidad que hoy demanda mayor transparencia  y  enfrenta retos propios de la coyutura actual que debemos resolver de forma conjunta. 
 </p>
 

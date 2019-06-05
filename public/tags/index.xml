@@ -2,192 +2,192 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on colef</title>
-    <link>/.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on colef</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 10 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Awk</title>
-      <link>/.com/tags/awk/</link>
+      <link>/tags/awk/</link>
       <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/.com/tags/awk/</guid>
+      <guid>/tags/awk/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bootstrap</title>
-      <link>/.com/tags/bootstrap/</link>
+      <link>/tags/bootstrap/</link>
       <pubDate>Wed, 12 Dec 2018 12:47:56 -0600</pubDate>
       
-      <guid>/.com/tags/bootstrap/</guid>
+      <guid>/tags/bootstrap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Command Line</title>
-      <link>/.com/tags/command-line/</link>
+      <link>/tags/command-line/</link>
       <pubDate>Wed, 10 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/.com/tags/command-line/</guid>
+      <guid>/tags/command-line/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Css</title>
-      <link>/.com/tags/css/</link>
+      <link>/tags/css/</link>
       <pubDate>Wed, 12 Dec 2018 12:47:56 -0600</pubDate>
       
-      <guid>/.com/tags/css/</guid>
+      <guid>/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fedora</title>
-      <link>/.com/tags/fedora/</link>
+      <link>/tags/fedora/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/.com/tags/fedora/</guid>
+      <guid>/tags/fedora/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fun</title>
-      <link>/.com/tags/fun/</link>
+      <link>/tags/fun/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/.com/tags/fun/</guid>
+      <guid>/tags/fun/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>/.com/tags/git/</link>
+      <link>/tags/git/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/.com/tags/git/</guid>
+      <guid>/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>/.com/tags/go/</link>
+      <link>/tags/go/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/.com/tags/go/</guid>
+      <guid>/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>/.com/tags/hugo/</link>
+      <link>/tags/hugo/</link>
       <pubDate>Wed, 12 Dec 2018 12:47:56 -0600</pubDate>
       
-      <guid>/.com/tags/hugo/</guid>
+      <guid>/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jekyll</title>
-      <link>/.com/tags/jekyll/</link>
+      <link>/tags/jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/.com/tags/jekyll/</guid>
+      <guid>/tags/jekyll/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Migration</title>
-      <link>/.com/tags/migration/</link>
+      <link>/tags/migration/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>/.com/tags/migration/</guid>
+      <guid>/tags/migration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nasa</title>
-      <link>/.com/tags/nasa/</link>
+      <link>/tags/nasa/</link>
       <pubDate>Thu, 27 Dec 2018 20:46:49 -0600</pubDate>
       
-      <guid>/.com/tags/nasa/</guid>
+      <guid>/tags/nasa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Plot</title>
-      <link>/.com/tags/plot/</link>
+      <link>/tags/plot/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/.com/tags/plot/</guid>
+      <guid>/tags/plot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quotes</title>
-      <link>/.com/tags/quotes/</link>
+      <link>/tags/quotes/</link>
       <pubDate>Wed, 26 Dec 2018 00:29:41 -0600</pubDate>
       
-      <guid>/.com/tags/quotes/</guid>
+      <guid>/tags/quotes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>/.com/tags/r-markdown/</link>
+      <link>/tags/r-markdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/.com/tags/r-markdown/</guid>
+      <guid>/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Regression</title>
-      <link>/.com/tags/regression/</link>
+      <link>/tags/regression/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/.com/tags/regression/</guid>
+      <guid>/tags/regression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Snap</title>
-      <link>/.com/tags/snap/</link>
+      <link>/tags/snap/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/.com/tags/snap/</guid>
+      <guid>/tags/snap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Templates</title>
-      <link>/.com/tags/templates/</link>
+      <link>/tags/templates/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>/.com/tags/templates/</guid>
+      <guid>/tags/templates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Theme</title>
-      <link>/.com/tags/theme/</link>
+      <link>/tags/theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>/.com/tags/theme/</guid>
+      <guid>/tags/theme/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ubuntu</title>
-      <link>/.com/tags/ubuntu/</link>
+      <link>/tags/ubuntu/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/.com/tags/ubuntu/</guid>
+      <guid>/tags/ubuntu/</guid>
       <description></description>
     </item>
     
