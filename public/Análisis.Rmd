@@ -35,15 +35,15 @@ library(gridExtra)
 
 
 
-### Hacia la construcción de una estrategia conjunta para fortalecer el compromiso institucional.
+### Hacia la construcción de una estrategia conjunta para fortalecer la participación institucional.
 
 
-**Análisis de la producción.**
+**Análisis de la  producción.**
 
 #### 1. Publicación  de libros.
 
 
-La producción de libros es fundamental en un centro de investigación, no obstante, estos son proyectos de largo plazo y expresiones de la trayectoria académica que reflejan un cierto grado de consolidación y liderazgo en un tema.
+La producción de libros es fundamental en un centro de investigación, no obstante, estos son proyectos de largo plazo y expresiones de la trayectoria académica que reflejan un alto grado de consolidación y liderazgo en un tema.
 
 
 ```{r, echo=FALSE,warning=FALSE,message=FALSE}
@@ -105,9 +105,27 @@ l2
 ggsave("libros3.jpg", width = 25, height = 17, units = "cm",dpi=300)
 ```
 
-Producción de libros un rubro que se percibe como **área de oportunidad**.
+La producción de libros de autor una fortaleza en Departamentos como DEAP y DEC. 
 
-#### 2. Calidad vs. Cantidad de producción
+Incentivar la producción de libros de autor es un rubro que se percibe como **área de oportunidad**.
+
+Acciones concretas en el esquema de evaluación podrian implementarse para incentivar la publicación de libros de autor si es que se considera conveniente para nuestra institución el transitar hacia esa vía. 
+
+
+
+
+
+#### 2. Calidad vs. Cantidad de producción.
+
+
+Un argumento a menudo enfatizado es la importancia de generar producción de calidad en contraste con un gran volumen de productos.
+
+Para abordar este punto se analiza a continuación la participación de los investigadores en la generación de publicaciones **tipo A**, la ponderación de calidad que en conjunto con la elaboración de libros es la más alta establecida en la regulación vigente. 
+
+El contraste se hace por departamento.
+
+La estimación controla por la variación en el número de investigadores por departamento de un año a otro.
+
 
 **¿Cómo se distribuye la  producción en artículos considerados de calidad tipo  A entre los departamentos?**
 
@@ -159,9 +177,19 @@ pa
 
 ```
 
+
+La mayoría de los investigadores generaron publicaciones tipo A en el periodo.  66%,  (57/86).
+
+
+También observamos un patrón en el orden de la producción por departamento que contrasta con la producción de libros.
+
+
+
+
+**¿Quien produce los ?**
+
 **¿Es equilibrada la participación de los investigadores en este tipo de productos?**
 
-**¿Quien los produce?**
 
 ```{r, echo=FALSE,warning=FALSE,message=FALSE}
 
@@ -236,7 +264,15 @@ p2
 ```
 
 
- 
+La información muestra también que la producción de **artículos tipo A** durante el periodo evaluado se concentra en un número reducido de investigadores: 
+
+Por ejemplo en el **DEP**, el departamento que generó el mayor número de publicaciones A en este periodo,  8 investigadores  generán 68% del total.
+
+Una situación de concentración similar se observa en el **DEUMA**. 
+
+
+**Consideraciones sobre las diferencias del tamaño de los Departamento**
+
 Podría ser tentador argumentar que: dado que el DEUMA y DEP son los departamentos con el mayor número de investigadores evaluados  (20 y 19 miembros) respectivamente, esto determina la posición relativa en la generación de artículos de calidad tipo A.
 
 
@@ -248,8 +284,6 @@ Para demostrar este punto se presenta a continuación la producción en artícul
 
 
 ```{r , echo=FALSE,warning=FALSE,message=FALSE }
-
-
 b<-tres%>%
   mutate(q2=Artículos_B+Artículos_C+cap_Aut+cap_Coaut.)%>%
   group_by(date,Departamento)%>%
@@ -332,7 +366,9 @@ ggplot(pts,aes(Sede,PtsPerInvm3, fill=Sede))+
 ggsave("pts_sede3.jpg", width = 25, height = 17, units = "cm",dpi=300)
 ```
 
+Se observa que la producción promedio por investigador en sedes como Nogales duplica la producción de Tijuana, equivale  a la producción conjunta de las sedes Juárez y Monterrey  y  representa 5 veces la producción de sedes como Mexicali.
 
+De  forma  similar la Sede  **Piedras Negras** representan la producción conjunta por investigador de las sedes Mexicali y Monterrey. 
 
 ##### 4. Compromiso en docencia,  una área de oportunidad.
 
@@ -458,6 +494,8 @@ write.csv(idep,"idep.csv")
 
 
 
+
+
 ```{r, echo=FALSE,warning=FALSE,message=FALSE, fig.height = 6, fig.width =10}
 
 pts_hrs<-read.csv('pts_hrs.csv')%>%
@@ -480,9 +518,15 @@ ggsave("D-I.jpg", width = 25, height = 17, units = "cm",dpi=300)
 
 ```
 
+Considerando dos de las actividades sustantivas establecidas en la regulación vigente de la institución, podemos observar que los investigadores que más publican son los que imparten más clases, (pendiente positiva en la línea de la gráfica) sin embargo, son las **mujeres** quienes participan más en **Docencia**, (la diferencia es estadísticamente significativa). 
 
+Considerando la carga docente vemos que las investigadoras en promedio impartieron en el periodo evaluado **78 horas**, lo que se traduce en una importante **área de oportunidad**, ya que esto implica la impartición de prácticamente un curso completo de 45hrs.  por año! 
 
-A partir del desemepño en docencia y publicaciones se definen 4 cuadrantes: 
+En cuanto a la generación de publicaciones por sexo no se observa una diferencia estadísticamente significativa entre la producción promedio de Hombres (7 pts promedio) y Mujeres (6 pts). 
+
+Este rasgo del perfil de la producción de publicaciones refleja  la distribución balanceada de la planta académica (evaluada) de El Colef por sexo. 61 (55%) Hombres  48 (44%), Mujeres.  Para un ratio H/M=1.27.
+
+A partir del desempeño en docencia y publicaciones se definen 4 cuadrantes: 
 
 + C1 Alta productividad publicaciones-Docencia, 
 + C2 Alta Docencia-Baja productividad publicaciones
@@ -495,8 +539,11 @@ Siendo el cuadrante 3  **(c3)**, el que presenta una área de oportunidad.
 
 Notable el desempeño de algunos investigadores en el programa cátedras con investigadores como Sumano, en Matamoros, Patrick Bruce en MTY, Calva Sánchez, Luis Enrique.
 
-Se identifican  areas de oportunidad en el desmpeño del programa en sedes regionales con 6 de  las 7 cátedras con el  perfil c3  de producción. 
+No obstante se identifican  areas de oportunidad en el desmpeño del programa en sedes regionales con 6 de las 7 cátedras con el  perfil c3  de producción. 
 
+Investigadores adscritos en el DEC y el DEP.
+
+Finalmente se oserva que entre los investigadores **NO** cátedras  que estan en **c3**, el 56%,  (18 de 32),pertenecen a la  sede Tijuana.
 
 
 **¿Qué proporción representan los investigadores en c3 por departamento?**
