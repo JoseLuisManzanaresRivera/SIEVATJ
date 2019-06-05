@@ -35,7 +35,7 @@ library(gridExtra)
 
 
 
-### Hacia la construcción de una estrategia CONJUNTA para fortalecer el compromiso institucional: Insumos para la toma de decisiones.
+### Hacia la construcción de una estrategia conjunta para fortalecer el compromiso institucional: Insumos para la toma de decisiones.
 
 
 **Análisis de la producción.**
