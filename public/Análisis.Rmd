@@ -34,8 +34,14 @@ library(gridExtra)
 
 ### Análisis de la producción.
 
+
+#### Hacia la construcción de una estrategia para fortalecer el compromiso institucional: Insumos para la toma de decisiones.
+
+
 #### 1. Publicación  de libros.
 
+
+Hacia la construcción de una estrategia para fortalecer el compromiso institucional: Insumos para la toma de decisiones.
 
 La producción de libros es fundamental en un centro de investigación, no obstante, estos son proyectos de largo plazo y expresiones de la trayectoria académica que reflejan un cierto grado de consolidación y liderazgo en un tema.
 
@@ -103,7 +109,7 @@ Producción de libros un rubro que se percibe como **área de oportunidad**.
 
 #### 2. Calidad vs. Cantidad de producción
 
-**¿Cómo se distribuye la  producción en artículos considerados de calidad tipo  A entre los departamentos.?**
+**¿Cómo se distribuye la  producción en artículos considerados de calidad tipo  A entre los departamentos?**
 
 ```{r, echo=FALSE,warning=FALSE,message=FALSE}
 
