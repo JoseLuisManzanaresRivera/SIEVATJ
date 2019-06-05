@@ -45,7 +45,6 @@ library(gridExtra)
 
 La producción de libros es fundamental en un centro de investigación, no obstante, estos son proyectos de largo plazo y expresiones de la trayectoria académica que reflejan un alto grado de consolidación y liderazgo en un tema.
 
-
 ```{r, echo=FALSE,warning=FALSE,message=FALSE}
 
 tres<-read.csv('tres.csv')
