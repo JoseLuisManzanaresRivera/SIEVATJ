@@ -7,6 +7,8 @@ title:
 
 #### Hacia la construcción de una estrategia para fortalecer la participación institucional: Insumos para la toma de decisiones.
 
+José Luis Manzanares Rivera.
+
 <p align="justify">
 
 El presente ejercicio busca aportar elementos y servir de insumo para analizar los indicadores de producción de los investigadores en la institución con base en la información disponible del SIEVA en una perspectiva  de los últimos 3 años.
