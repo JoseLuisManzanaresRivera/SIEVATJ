@@ -35,9 +35,6 @@ library(gridExtra)
 
 
 
-### Hacia la construcción de una estrategia conjunta para fortalecer la participación institucional.
-
-
 **Análisis de la  producción.**
 
 #### 1. Publicación  de libros.
@@ -159,7 +156,7 @@ i<-group_by(tres,date,Departamento)%>%
 pa<-ggplot(i, aes(fct_reorder(Departamento,w_mean), w_mean, fill=Departamento))+
   geom_col()+ 
   coord_flip()+
-  labs(y="Artículos", subtitle="Promedio por investigador por año.()", x="Departamento",title="Artículos tipo A por departamento académico promedio en periodo 2017,2018,2019.")+
+  labs(y="Artículos", subtitle="Promedio en el periodo 2017,2018,2019 y promedio por investigador por año ().", x="Departamento",title="Artículos tipo A por departamento académico.")+
   theme_light()+
   annotate("text", x="DEUMA", y=5, label="(.92)")+
   annotate("text", x="DEP", y=5, label="(1.08) ")+
@@ -183,11 +180,7 @@ La mayoría de los investigadores generaron publicaciones tipo A en el periodo. 
 También observamos un patrón en el orden de la producción por departamento que contrasta con la producción de libros.
 
 
-
-
-**¿Quien produce los ?**
-
-**¿Es equilibrada la participación de los investigadores en este tipo de productos?**
+**¿Cómo participan los investigadores en la publicación de articulos de calidad tipo A al interior de los departamentos?**
 
 
 ```{r, echo=FALSE,warning=FALSE,message=FALSE}
@@ -270,7 +263,7 @@ Por ejemplo en el **DEP**, el departamento que generó el mayor número de publi
 Una situación de concentración similar se observa en el **DEUMA**. 
 
 
-**Consideraciones sobre las diferencias del tamaño de los Departamento**
+**Consideraciones sobre las diferencias del tamaño de los Departamentos**
 
 Podría ser tentador argumentar que: dado que el DEUMA y DEP son los departamentos con el mayor número de investigadores evaluados  (20 y 19 miembros) respectivamente, esto determina la posición relativa en la generación de artículos de calidad tipo A.
 
@@ -393,7 +386,7 @@ theme(legend.position='none')+
 ggsave("boxplot.jpg", width = 25, height = 17, units = "cm",dpi=300)
 ```
 
-La distribución en horas de docencia actual refleja el diseño institucional en el que tenemos una sede principal: Tijuana donde se concentran la gran mayoria de los programas docentes  y otras sedes que en su mayoria no cuentan con programas docentes.
+La distribución actual en horas de docencia refleja el diseño institucional en el que tenemos una sede principal: Tijuana donde se concentran la gran mayoria de los programas docentes  y otras sedes que en su mayoria no cuentan con programas docentes.
 
 Este diseño condiciona el perfil de activiades docentes de los investigadores entre las sedes.
 
@@ -401,12 +394,21 @@ Considerando esta conformación regional  el SIEVA establece provisiones que com
 
 
 
-### 5. Publicaciones y docencia desde una perspectiva de género.
+### 5. Publicaciones y docencia:  una perspectiva de género.
 
 
 
 ```{r, echo=FALSE,warning=FALSE,message=FALSE}
+
 tres<-read.csv('tres.csv')
+
+treshold<-group_by(tres,Nombre)%>%
+  summarize(pts=mean(pts_prod),hrs=mean(Hrs_cls))
+
+
+
+
+## Escenario con la media como delimitador.
 
 pts_hrs<-group_by(tres,Nombre, Sexo)%>%
 summarize(pts=mean(pts_prod),hrs=mean(Hrs_cls))%>%
@@ -414,9 +416,19 @@ summarize(pts=mean(pts_prod),hrs=mean(Hrs_cls))%>%
                    ifelse(pts>=6&hrs<78,4,
                    ifelse(pts<6&hrs<78,3,2))))
 
+## Escenario menos estricto usando  Q1 como delimitador.
+
+pts_hrs2<-group_by(tres,Nombre, Sexo)%>%
+summarize(pts=mean(pts_prod),hrs=mean(Hrs_cls))%>%
+  mutate(cuadrante=ifelse(pts>=4&hrs>=45,1,
+                   ifelse(pts>=4&hrs<45,4,
+                   ifelse(pts<4&hrs<45,3,2))))
+
 
 sexomed<-pts_hrs%>%group_by(Sexo)%>%
   summarize(m=mean(pts))
+
+
 
 hm_ratio<-pts_hrs%>%
   group_by(Sexo)%>%
@@ -425,17 +437,29 @@ hm_ratio<-pts_hrs%>%
 cuadrantes<-group_by(pts_hrs,cuadrante)%>%
   summarize(total=n())
 
-write.csv(pts_hrs,"pts_hrs.csv")
+cuadrantes2<-group_by(pts_hrs2,cuadrante)%>%
+  summarize(total=n())
 
-cat<-c("Díaz Carnero Emiliano Ignacio","Medina Parra Rosa Isabel", "Peña Muñoz, Jesús Javier","Pérez Caballero Jesús","Ley Cervantes, Melissa","Rosales Martínez, Yetzi", "Portillo Tellez, María del Carmen", "Hernández López, Ana Gabriela", "Sumano Rodríguez José Andrés", "Calva Sánchez, Luis Enrique
-","Matus Ruiz, Maximino", "Bruce, Benjamín Patrick
-")
+
+write.csv(pts_hrs,"pts_hrs.csv")
+write.csv(pts_hrs2,"pts_hrs2.csv")
+
+cat<-c("Díaz Carnero Emiliano Ignacio","Medina Parra Rosa Isabel", "Peña Muñoz, Jesús Javier","Pérez Caballero Jesús","Ley Cervantes, Melissa","Rosales Martínez, Yetzi", "Portillo Tellez, María del Carmen", "Hernández López, Ana Gabriela", "Sumano Rodríguez José Andrés", "Calva Sánchez, Luis Enrique","Matus Ruiz, Maximino", "Bruce, Benjamín Patrick")
 
 pts_hrs<-read.csv("pts_hrs.csv")
-cat<-as.data.frame(cat)
+
+pts_hrs2<-read.csv("pts_hrs2.csv")
+
+cat<-as.data.frame(cat)%>%rename(Nombre=cat)
 
 lista<-read.csv("nuevalista.csv")%>%
     select(-X,-n)
+
+
+c3flex<-filter(pts_hrs2,cuadrante==3)%>%
+  left_join(lista)%>%
+  mutate(cdra=ifelse(Nombre%in%cat$Nombre,1,0))
+
 
 c3<-filter(pts_hrs,cuadrante==3)%>%
   left_join(lista)%>%
@@ -447,10 +471,22 @@ c3cat<-filter(pts_hrs,cuadrante==3)%>%
   mutate(cdra=ifelse(Nombre%in%cat$cat,1,0))%>%
   filter(cdra==1)
 
-catNoc3<-filter(pts_hrs,cuadrante==2)%>%
+
+c3catflex<-filter(pts_hrs2,cuadrante==3)%>%
   left_join(lista)%>%
-  mutate(cdra=ifelse(Nombre%in%cat$cat,1,0))%>%
+  mutate(cdra=ifelse(Nombre%in%cat$Nombre,1,0))%>%
   filter(cdra==1)
+
+
+catNoc3flex<-filter(pts_hrs2,cuadrante!=3)%>%
+  left_join(lista)%>%
+  mutate(cdra=ifelse(Nombre%in%cat$Nombre,1,0))%>%
+  filter(cdra==1)
+
+c3depflex<-filter(pts_hrs2,cuadrante==3)%>%
+  left_join(lista)%>%
+  group_by(Departamento)%>%
+  count()
 
 c3dep<-filter(pts_hrs,cuadrante==3)%>%
   left_join(lista)%>%
@@ -459,7 +495,7 @@ c3dep<-filter(pts_hrs,cuadrante==3)%>%
 
 c3t<-filter(pts_hrs,cuadrante==3)%>%
   left_join(lista)%>%
-  mutate(cdra=ifelse(Nombre%in%cat$cat,1,0))%>%
+  mutate(cdra=ifelse(Nombre%in%cat$Nombre,1,0))%>%
   filter(Sede=='Tijuana')%>%
   group_by(Departamento)%>%
   count()%>%ungroup()%>%
@@ -488,7 +524,21 @@ idep<-group_by(tres,date,Departamento)%>%
   gather(type,p,alta:baja)
   
 
-write.csv(idep,"idep.csv")
+idepflex<-group_by(tres,date,Departamento)%>%
+  summarize(inv=n())%>%
+  arrange(desc(inv))%>%
+  group_by(Departamento)%>%
+  summarise(medinv=round(mean(inv)))%>%
+  left_join(c3depflex)%>%
+  mutate(baja=round((n/medinv),2))%>%
+  arrange(desc(baja))%>%
+  mutate(alta=1-baja,baja=-1*baja)%>%
+  select(Departamento,alta,baja)%>%
+  gather(type,p,alta:baja)
+  
+
+
+write.csv(idepflex,"idepflex.csv")
 ```
 
 
@@ -499,6 +549,27 @@ write.csv(idep,"idep.csv")
 
 pts_hrs<-read.csv('pts_hrs.csv')%>%
   select(-X)
+
+pts_hrs<-read.csv('pts_hrs2.csv')%>%
+  select(-X)
+
+## Plot con alternativa en q1 (flex).
+
+pltflex<-ggplot(pts_hrs2, aes(pts,hrs, colour=Sexo, label=Nombre))+
+  scale_colour_manual(values=c("deepskyblue3", "deeppink"))+
+  geom_point(aes(size=pts),alpha=.5)+
+  theme_light()+
+  stat_smooth( method=lm, se=FALSE)+
+labs(y="Horas clase", x="Publicaciones (pts)",subtitle="Evalaución 2018", x="",title="Relación Docencia-Investigación")+
+labs(size="Puntos")+
+geom_hline(yintercept=45,linetype="dotted", size=.5, color="blue")+
+geom_vline(xintercept=4,linetype="dotted", size=.5, color="red")+
+annotate("text", x=25, y=230, label="Alta productividad")
+
+
+ggsave("diflex.jpg", width = 25, height = 17, units = "cm",dpi=300)
+
+
 
 plt<-ggplot(pts_hrs, aes(pts,hrs, colour=Sexo, label=Nombre))+
   scale_colour_manual(values=c("deepskyblue3", "deeppink"))+
@@ -511,9 +582,10 @@ geom_hline(yintercept=78,linetype="dotted", size=.5, color="blue")+
 geom_vline(xintercept=6,linetype="dotted", size=.5, color="red")+
 annotate("text", x=25, y=230, label="Alta productividad")
 
+
 ggplotly(plt)
 
-ggsave("D-I.jpg", width = 25, height = 17, units = "cm",dpi=300)
+ggsave("d-i.jpg", width = 25, height = 17, units = "cm",dpi=300)
 
 ```
 
@@ -529,21 +601,14 @@ A partir del desempeño en docencia y publicaciones se definen 4 cuadrantes:
 
 + C1 Alta productividad publicaciones-Docencia, 
 + C2 Alta Docencia-Baja productividad publicaciones
-+ C3 **Baja Docenca-productividad publicaciones** 
++ C3 **Baja Docencia-productividad publicaciones** 
 + C4 Alta productividad publicaciones-Baja docencia.
 
 Siendo el cuadrante 3  **(c3)**, el que presenta una área de oportunidad.
 
 **Programa Cátedras**
 
-Notable el desempeño de algunos investigadores en el programa cátedras con investigadores como Sumano, en Matamoros, Patrick Bruce en MTY, Calva Sánchez, Luis Enrique.
-
-No obstante se identifican  areas de oportunidad en el desmpeño del programa en sedes regionales con 6 de las 7 cátedras con el  perfil c3  de producción. 
-
-Investigadores adscritos en el DEC y el DEP.
-
-Finalmente se oserva que entre los investigadores **NO** cátedras  que estan en **c3**, el 56%,  (18 de 32),pertenecen a la  sede Tijuana.
-
+Notable el desempeño de algunos investigadores en el programa cátedras con investigadores como Andrés Sumano, en Matamoros, Patrick Bruce en MTY, Calva Sánchez, Luis Enrique.
 
 **¿Qué proporción representan los investigadores en c3 por departamento?**
 
@@ -559,7 +624,7 @@ ptd<-idep%>%
   geom_bar(stat = "identity")+
   coord_flip()+
    theme_light()+
-  labs(y="",x="",title="¿Qué proporción de investigadores están en C3?")+
+  labs(y="",x="",title="Proporción de investigadores en C3 por departamento?")+
   scale_fill_manual(values=c("#00BFC4",  "#F8766D"))+
   scale_y_continuous(labels=percent_format())+
  annotate("text", x="DEE", y=-.1, label="18%")+
@@ -571,6 +636,11 @@ annotate("text", x="DES", y=-.1, label="25%")+
 ptd
 
 ggsave("c3.jpg", width = 25, height = 17, units = "cm",dpi=300)
+
+idep2<-read.csv("idep.csv")%>%
+  rename(c3=type)%>%
+  mutate(c3=ifelse(c3=="alta","No","Sí"))
+
 ```
 
 
