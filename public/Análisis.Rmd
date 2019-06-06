@@ -86,7 +86,7 @@ libros<-group_by(tres,date,Departamento)%>%
 l2<-ggplot(lib.media, aes(fct_reorder(Departamento,libros), libros, fill=Departamento))+
   geom_col()+
   coord_flip()+
-  labs(y="Libros", subtitle="Total periodo 2017,2018,2019, promedio por año y promedio por investigador () ", x="Departamento",title="Libros de Autor por departamento académico")+
+  labs(y="Libros", subtitle="Total periodo 2016,2017,2018, promedio por año y promedio por investigador () ", x="Departamento",title="Libros de Autor por departamento académico")+
   theme_light()+
   annotate("text", x="DEUMA", y=5, label="1, (0.05)")+
   annotate("text", x="DEP", y=5, label="1, (0.05)")+
@@ -156,7 +156,7 @@ i<-group_by(tres,date,Departamento)%>%
 pa<-ggplot(i, aes(fct_reorder(Departamento,w_mean), w_mean, fill=Departamento))+
   geom_col()+ 
   coord_flip()+
-  labs(y="Artículos", subtitle="Promedio en el periodo 2017,2018,2019 y promedio por investigador por año ().", x="Departamento",title="Artículos tipo A por departamento académico.")+
+  labs(y="Artículos", subtitle="Promedio en el periodo 2016,2017,2018 y promedio por investigador por año ().", x="Departamento",title="Artículos tipo A por departamento académico.")+
   theme_light()+
   annotate("text", x="DEUMA", y=5, label="(.92)")+
   annotate("text", x="DEP", y=5, label="(1.08) ")+
@@ -212,7 +212,7 @@ auno<-filter(A,A==1)
 p1<-ggplot(amayor1,aes(fct_reorder(Nombre,A),A, fill=Departamento))+
 geom_col()+ 
 coord_flip()+
-  labs(y="Artículos", subtitle="Histórico SIEVA 2017,2018,2019", x="Nombre del investigador",title="Publicaciones tipo A por investigador")+
+  labs(y="Artículos", subtitle="Histórico SIEVA 2016,2017,2018", x="Nombre del investigador",title="Publicaciones tipo A por investigador")+
   theme_light()+
   scale_fill_manual(values=c("#fc8d62", "#8da0cb","#e78ac3", "#a6d854",  "#ffd92f", "#66c2a5"))
 
@@ -307,7 +307,7 @@ b<-tres%>%
 bp<-ggplot(inve, aes(fct_reorder(Departamento,bmed), bmed, fill=Departamento))+
   geom_col()+ 
   coord_flip()+
-  labs(y="Publicaciones", subtitle="Promedio por investigador 2017,2018,2019", x="Departamento",title="Artículos tipo B,C y capítulos de libro")+
+  labs(y="Publicaciones", subtitle="Promedio por investigador 2016,2017,2018", x="Departamento",title="Artículos tipo B,C y capítulos de libro")+
   theme_light()+
   theme(legend.position='none')+
   annotate("text", x="DEUMA", y=2, label="(3.19)")+
@@ -349,7 +349,7 @@ ggplot(pts,aes(Sede,PtsPerInvm3, fill=Sede))+
   geom_col()+
   coord_flip()+
   scale_fill_brewer(palette="Oranges")+
-  labs(y="Puntos por investigador", x="Sede",title="Puntuación por sede según número de investgadores", subtitle="SIEVA promedio 3 años 2017,2018,2019")+
+  labs(y="Puntos por investigador", x="Sede",title="Puntuación por sede según número de investgadores", subtitle="SIEVA promedio 3 años 2016,2017,2018")+
   theme_light()+
   guides(fill=FALSE)
 
@@ -376,7 +376,7 @@ summarize(pts=mean(pts_prod),hrs=mean(Hrs_cls))
 doc<-ggplot(tres, aes(reorder(Sede, Hrs_cls, FUN = median), Hrs_cls)) +
   geom_boxplot(aes(fill=Sede ))+
   theme_light()+
-  labs(y="Horas clase", subtitle="Historico SIEVA 2017,2018,2019 ", x="Sede",title="Participación en Docencia")+
+  labs(y="Horas clase", subtitle="Historico SIEVA 2016,2017,2018 ", x="Sede",title="Participación en Docencia")+
 theme_classic(base_size = 14)+
 theme(legend.position='none')+
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
