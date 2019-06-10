@@ -1,6 +1,6 @@
 baseURL = "https://participacion-institucional-sieva3a.netlify.com/"
 languageCode = "en-us"
-title = "colef"
+title = "Colef"
 theme = "vanilla-bootstrap-hugo-theme"
 googleAnalytics = "UA-123456789-1"
 
