@@ -362,7 +362,7 @@ Se observa que la producción promedio por investigador en sedes como Nogales du
 
 De  forma  similar la Sede  **Piedras Negras** representan la producción conjunta por investigador de las sedes Mexicali y Monterrey. 
 
-##### 4. Participación en docencia,  una área de oportunidad.
+### 4. Participación en docencia,  una área de oportunidad.
 
 Para tener una perspectiva de la participación en docencia por sede la siguiente gráfica muestra la distribución de las horas impartidas para las 7 sedes.
 
