@@ -362,7 +362,7 @@ Se observa que la producción promedio por investigador en sedes como Nogales du
 
 De  forma  similar la Sede  **Piedras Negras** representan la producción conjunta por investigador de las sedes Mexicali y Monterrey. 
 
-##### 4. Compromiso en docencia,  una área de oportunidad.
+##### 4. Participación en docencia,  una área de oportunidad.
 
 Para tener una perspectiva de la participación en docencia por sede la siguiente gráfica muestra la distribución de las horas impartidas para las 7 sedes.
 
@@ -404,7 +404,6 @@ tres<-read.csv('tres.csv')
 
 treshold<-group_by(tres,Nombre)%>%
   summarize(pts=mean(pts_prod),hrs=mean(Hrs_cls))
-
 
 
 
@@ -549,6 +548,10 @@ write.csv(idepflex,"idepflex.csv")
 
 pts_hrs<-read.csv('pts_hrs.csv')%>%
   select(-X)
+
+c3<-filter(pts_hrs,cuadrante==3 )
+
+
 
 pts_hrs<-read.csv('pts_hrs2.csv')%>%
   select(-X)
